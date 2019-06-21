@@ -1,10 +1,10 @@
-// import Vue from 'vue'
+import Vue from 'vue'
 // import Vuetify from 'vuetify/lib'
 // import colors from 'vuetify/es5/util/colors'
 // import '@mdi/font/css/materialdesignicons.css'
 // import '@mdi/font/css/materialdesignicons.min.css'
 // import '@fortawesome/fontawesome-free/css/all.css'
-// import Animation from 'animate.css'
+import Animation from 'animate.css'
 // import VueAnimate from 'vue-animate-scroll'
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
@@ -14,7 +14,7 @@
 //   iconfont: 'md' || 'mdi' || 'fa' || 'fa4'
 // })
 
-// Vue.use(Animation)
+Vue.use(Animation)
 // Vue.use(VueAnimate)
 
 // Vue.use(Vuetify, {

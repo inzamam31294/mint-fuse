@@ -3,7 +3,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="//fonts.googleapis.com/css?family=Raleway"
+      href="//fonts.googleapis.com/css?family=Raleway:400,500,600"
     />
     <title>MintFuse</title>
     <!-- <v-navigation-drawer
@@ -144,9 +144,9 @@ export default {
   margin-left: 40px;
 }
 .btn-toolbar {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: whitesmoke;
   margin: 25px;
