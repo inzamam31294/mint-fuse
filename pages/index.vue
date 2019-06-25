@@ -16,67 +16,45 @@
     </script>
     <v-flex xs12>
       <v-card class="main-heading" flat color="#404a60">
-        <!-- <v-card-title
-          class="header-text1"
-          data-aos-delay="40"
-          data-aos-duration="1000"
-          data-aos-easing="ease"
-          data-aos="fade-right"
-        >
-          <p class="p-class">
-            LET
-            <span class="mint-fuse">MINT FUSE</span>
-            GROW<br />
-            YOUR BUSINESS
-          </p>
-          <v-spacer />
+        <v-card-title class="header-text">
+          <h1 class="p-class">
+            <p>
+              LET
+              <span class="mint-fuse">MINT FUSE</span>
+              GROW<br />
+              YOUR BUSINESS
+            </p>
+          </h1>
+          <h2 class="p-class">
+            <p>
+              LET
+              <span class="mint-fuse">MINT FUSE</span>
+              MAKE<br />
+              YOUR DESIGN
+            </p>
+          </h2>
+          <h3 class="p-class">
+            <p>
+              LET
+              <span class="mint-fuse">MINT FUSE</span>
+              DO<br />
+              YOUR MARKETING
+            </p>
+          </h3>
         </v-card-title>
-        <v-card-title
-          class="header-text2"
-          data-aos-delay="40"
-          data-aos-duration="1000"
-          data-aos-easing="ease"
-          data-aos="fade-up"
-        >
-          <p class="p-class">
-            LET
-            <span class="mint-fuse">MINT FUSE</span>
-            MAKE<br />
-            YOUR DESIGN
-          </p>
-          <v-spacer />
-        </v-card-title>
-        <v-card-title
-          class="header-text3"
-          data-aos-delay="40"
-          data-aos-duration="1000"
-          data-aos-easing="ease"
-          data-aos="fade-down"
-        >
-          <p class="p-class">
-            LET
-            <span class="mint-fuse">MINT FUSE</span>
-            MAKE<br />
-            YOUR DESIGN
-          </p>
-          <v-spacer />
-        </v-card-title> -->
-        <svg viewbox="0 0 700 225">
+        <!-- <svg viewbox="0 0 700 225">
           <clipPath id="textClip" class="filled-heading">
             <text y="70">let mint fuse</text>
             <text y="140">grow your</text>
             <text y="210">business</text>
-            <!-- <text y="280">a no limit digital marketing agency</text> -->
 
             <text y="70">let mint fuse</text>
             <text y="140">do your</text>
             <text y="210">design</text>
-            <!-- <text y="280">a no limit digital marketing agency</text> -->
 
             <text y="70">let mint fuse</text>
             <text y="140">do your</text>
             <text y="210">marketing</text>
-            <!-- <text y="280">a no limit digital marketing agency</text> -->
           </clipPath>
 
           <g id="background" clip-path="url(#textClip)">
@@ -166,8 +144,13 @@
               stroke-width="0"
             />
           </g>
-        </svg>
-        <v-card-text> </v-card-text>
+        </svg> -->
+        <v-card-text class="u-header">
+          <div class="text-u-header"></div>
+          <div class="text-u-header2">
+            <span> &nbsp;a no-limits digital marketing agency</span>
+          </div>
+        </v-card-text>
       </v-card>
     </v-flex>
   </v-layout>
@@ -181,23 +164,23 @@ export default {
 </script>
 
 <style scoped>
-/* .p-class {
+.p-class {
   font-size: 70px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   color: #66cc99;
   letter-spacing: 3px;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
 .mint-fuse {
   color: whitesmoke;
-  padding: 20px;
-} */
+  /* padding: 3px; */
+}
 .main-heading {
   padding-top: 200px;
 }
 /* Basic styling */
-svg {
+/* svg {
   width: 100%;
 }
 .filled-heading {
@@ -206,19 +189,19 @@ svg {
   font-size: 4em;
   font-weight: 900;
   line-height: 0.9;
-}
+} */
 
 /* Animate the background shapes */
-#background path {
-  animation: pulse 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+/* #background path {
+  animation: pulse 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; */
 
-  /* Necessary to keep the SVG objects in place while scaling */
-  transform-origin: 50% 50%;
+/* Necessary to keep the SVG objects in place while scaling */
+/* transform-origin: 50% 50%;
   transform-box: fill-box;
-}
+} */
 
 /* Reveal the desired lines of text in the desired order */
-#textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
+/* #textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
   animation: showFirst 12s infinite;
 }
 #textClip text:nth-of-type(n + 4):nth-of-type(-n + 6) {
@@ -226,11 +209,11 @@ svg {
 }
 #textClip text:nth-of-type(n + 7):nth-of-type(-n + 9) {
   animation: showThird 12s infinite;
-}
+} */
 
-@keyframes pulse {
-  /* Rotating it along with the scale makes it a little bit more fancy */
-  0%,
+/* @keyframes pulse { */
+/* Rotating it along with the scale makes it a little bit more fancy */
+/* 0%,
   100% {
     transform: scale(0) rotate(33deg);
   }
@@ -270,6 +253,164 @@ svg {
   66%,
   100% {
     opacity: 0;
+  }
+} */
+h2 {
+  /* top: 300; */
+  position: absolute;
+}
+h3 {
+  /* top: 300; */
+  position: absolute;
+}
+.header-text {
+  animation: fadeIn ease infinite;
+  animation-duration: 7s;
+  padding-bottom: 0;
+}
+.header-text h1 {
+  animation: showFirst 21s infinite;
+}
+.header-text h2 {
+  animation: showSecond 21s infinite;
+}
+.header-text h3 {
+  animation: showThird 21s infinite;
+}
+@keyframes showFirst {
+  0%,
+  33.3% {
+    opacity: 1;
+  }
+  33.4%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showSecond {
+  33.5%,
+  66.7% {
+    opacity: 1;
+  }
+  0%,
+  33.3%,
+  66.8%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showThird {
+  66.8%,
+  99.9% {
+    opacity: 1;
+  }
+  0%,
+  66.7%,
+  100% {
+    opacity: 0;
+  }
+}
+.u-header {
+  padding-top: 0px;
+  line-height: 1.5rem;
+}
+.text-u-header {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Raleway';
+  color: aquamarine;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.text-u-header2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Raleway';
+  color: aquamarine;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-u-header:first-of-type {
+  /* For increasing performance 
+  ID/Class should've been used. 
+  For a small demo 
+  It's okaish for now */
+  animation: showup 7s ease-in-out infinite;
+  /* animation-delay: 1s; */
+}
+.text-u-header2:first-of-type {
+  /* For increasing performance 
+  ID/Class should've been used. 
+  For a small demo 
+  it's okaish for now */
+  animation: showup 7s ease-in-out infinite;
+}
+
+.text-u-header:last-of-type {
+  width: 0px;
+  animation: reveal 7s ease-in-out infinite;
+}
+.text-u-header2:last-of-type {
+  width: 0px;
+  animation: reveal 7s ease-in-out infinite;
+}
+
+.text-u-header2:last-of-type span {
+  margin-left: -700px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 700px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 700px;
   }
 }
 </style>
