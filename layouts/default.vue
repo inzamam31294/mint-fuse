@@ -83,7 +83,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
       :clipped="clipped"
@@ -91,15 +91,15 @@
       fixed
       app
     >
-      <!-- <v-list>
+      <v-list>
         <v-list-tile @click.native="right = !right">
           <v-list-tile-action>
             <v-icon light>compare_arrows</v-icon>
           </v-list-tile-action>
           <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
         </v-list-tile>
-      </v-list> -->
-    </v-navigation-drawer>
+      </v-list>
+    </v-navigation-drawer> -->
     <v-footer :fixed="fixed" dark color="#404a60">
       <span>&copy; 2019</span>
     </v-footer>

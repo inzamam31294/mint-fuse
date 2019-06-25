@@ -363,7 +363,7 @@ h3 {
   animation: slidein 7s infinite;
 }
 
-@keyframes showup {
+/* @keyframes showup {
   0% {
     opacity: 0;
   }
@@ -376,7 +376,7 @@ h3 {
   100% {
     opacity: 0;
   }
-}
+} */
 
 @keyframes slidein {
   0% {
