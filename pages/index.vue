@@ -1,48 +1,52 @@
 <template>
-  <v-layout column>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Raleway:800"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js" />
-    <script>
-      AOS.init()
-    </script>
-    <v-flex xs12>
-      <v-card class="main-heading" flat color="#404a60">
-        <v-card-title class="header-text">
-          <h1 class="p-class">
-            <p>
-              LET
-              <span class="mint-fuse">MINT FUSE</span>
-              GROW<br />
-              YOUR BUSINESS
-            </p>
-          </h1>
-          <h2 class="p-class">
-            <p>
-              LET
-              <span class="mint-fuse">MINT FUSE</span>
-              MAKE<br />
-              YOUR DESIGN
-            </p>
-          </h2>
-          <h3 class="p-class">
-            <p>
-              LET
-              <span class="mint-fuse">MINT FUSE</span>
-              DO<br />
-              YOUR MARKETING
-            </p>
-          </h3>
-        </v-card-title>
-        <!-- <svg viewbox="0 0 700 225">
+  <v-app>
+    <v-layout wrap class="index">
+      <Layout />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700,800,900"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://unpkg.com/aos@next/dist/aos.js" />
+      <script>
+        AOS.init()
+      </script>
+      <v-container text-xs-center>
+        <v-layout justify-center align-center>
+          <v-flex xl12>
+            <v-card class="main-heading" flat color="#404a60">
+              <v-card-title class="header-text">
+                <h1 class="p-class">
+                  <p>
+                    your
+                    <span class="mint-fuse">partner</span>
+                    for all<br />
+                    things <span class="mint-fuse">digital</span>
+                  </p>
+                </h1>
+                <!-- <h2 class="p-class">
+                  <p>
+                    LET
+                    <span class="mint-fuse">MINT FUSE</span>
+                    MAKE<br />
+                    YOUR DESIGN
+                  </p>
+                </h2>
+                <h3 class="p-class">
+                  <p>
+                    LET
+                    <span class="mint-fuse">MINT FUSE</span>
+                    DO<br />
+                    YOUR MARKETING
+                  </p>
+                </h3> -->
+              </v-card-title>
+              <!-- <svg viewbox="0 0 700 225">
           <clipPath id="textClip" class="filled-heading">
             <text y="70">let mint fuse</text>
             <text y="140">grow your</text>
@@ -59,7 +63,7 @@
 
           <g id="background" clip-path="url(#textClip)">
             <path
-              d="m108.51 198.24c-68.576 21.595-114.17 57.226-104.72 2.8714 9.4539-54.355 8.8929 15.643-2.562-21.478-11.455-37.122 36.826-87.851 52.189-57.786 15.362 30.066 3.0926-35.052 57.465 2.1231 54.373 37.175 26.891 0.19388 14.227 40.632-12.664 40.438-1.8729 29-16.602 33.638z"
+              d="m108.51 198.24c-68.576 21.595-114.17 57.226-104.72 2.8714 9.4539-54.355 8.8929 15.643-2.562-21.478-11.455-37.122 36.826-87.851 52.189-57.786 15.413 30.066 3.0926-35.052 57.465 2.1231 54.373 37.175 26.891 0.19388 14.227 40.632-12.664 40.438-1.8729 29-16.602 33.638z"
               fill="#4e8cff"
               stroke-width="0"
             />
@@ -89,7 +93,7 @@
               stroke-width="0"
             />
             <path
-              d="m433.01 37.746c24.598-43.188-14.973 103.95 14.584 51.296 10.481-103.41 99.772 14.333 75.403 24.563-61.833 24.535-22.985 7.311-25.484 60.353-2.4986 53.042-77.838 25.441-90.466-37.041-12.628-62.482 25.962-99.171 25.962-99.171z"
+              d="m433.01 37.746c24.598-43.188-14.973 103.95 14.584 51.296 10.481-103.41 99.772 14.333 75.403 24.563-61.833 24.535-22.985 7.311-25.484 60413-2.4986 53.042-77.838 25.441-90.466-37.041-12.628-62.482 25.962-99.171 25.962-99.171z"
               fill="#664eff"
               stroke-width="0"
             />
@@ -145,39 +149,185 @@
             />
           </g>
         </svg> -->
-        <v-card-text class="u-header">
-          <div class="text-u-header"></div>
-          <div class="text-u-header2">
-            <span> &nbsp;a no-limits digital marketing agency</span>
-          </div>
-        </v-card-text>
-      </v-card>
-    </v-flex>
-  </v-layout>
+              <v-card-text class="u-header">
+                <div class="text-u-header">we are an enthusiastic team of</div>
+                <div class="text-u-header2">
+                  <span class="flip-text">software developers</span>
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-layout>
+    <v-layout wrap class="index-2">
+      <v-container class="index-2-cont" justify-center fluid>
+        <v-flex xs12>
+          <v-card height="800px" class="index-2-heading" flat>
+            <v-card-title
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+              class="index-2-headertext"
+            >
+              <h1 class="about-us">
+                about<span style="font-weight: bold;"> us</span>
+              </h1>
+            </v-card-title>
+            <v-card-text
+              data-aos-delay="500"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-up"
+              class="index-2-uheader"
+              >We do graphic designing, web & application development, SEO,<br />
+              SEM, pay-per-click ads, social media marketing and other services
+              focused<br />
+              around optimizing your website and digital presence to multiply
+              growth of<br />
+              your company in the International market.
+            </v-card-text>
+          </v-card>
+        </v-flex>
+      </v-container>
+    </v-layout>
+    <v-layout wrap class="index-3">
+      <v-container class="index-3-cont" justify-center fluid>
+        <v-flex xs12>
+          <v-card height="900px" class="index-3-heading" flat>
+            <v-card-title
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+              class="index-3-headertext"
+            >
+              <h1 class="our-services">
+                our<span style="font-weight: bold;"> services</span>
+              </h1>
+            </v-card-title>
+            <v-container
+              class="index-3-cont2"
+              grid-list-xl
+              text-xs-center
+              fluid
+            >
+              <v-layout>
+                <v-flex xs4>
+                  <v-card
+                    flat
+                    color="#66cc99"
+                    height="500px"
+                    width="580px"
+                  ></v-card>
+                </v-flex>
+                <v-flex xs4>
+                  <v-card
+                    flat
+                    color="#404a60"
+                    height="500px"
+                    width="580px"
+                  ></v-card>
+                </v-flex>
+                <v-flex xs4>
+                  <v-card
+                    flat
+                    color="#00bfff"
+                    height="500px"
+                    width="580px"
+                  ></v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
+        </v-flex>
+      </v-container>
+    </v-layout>
+    <v-layout wrap class="index-4">
+      <v-container class="index-4-cont" justify-center fluid>
+        <v-flex xs12>
+          <v-card height="900px" class="index-4-heading" flat>
+            <v-card-title
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+              class="index-4-headertext"
+            >
+              <h1 class="our-expertise">
+                our<span style="font-weight: bold;"> expertise</span>
+              </h1>
+            </v-card-title>
+            <v-container
+              class="index-4-cont2"
+              grid-list-xl
+              text-xs-center
+              fluid
+            >
+              <v-layout>
+                <v-flex xs4>
+                  <v-card
+                    flat
+                    color="#66cc99"
+                    height="500px"
+                    width="580px"
+                  ></v-card>
+                </v-flex>
+                <v-flex xs4>
+                  <v-card
+                    flat
+                    color="#404a60"
+                    height="500px"
+                    width="580px"
+                  ></v-card>
+                </v-flex>
+                <v-flex xs4>
+                  <v-card
+                    flat
+                    color="#00bfff"
+                    height="500px"
+                    width="580px"
+                  ></v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
+        </v-flex>
+      </v-container>
+    </v-layout>
+  </v-app>
 </template>
 
 <script>
+import Layout from '~/components/default.vue'
+// import Footer from '~/components/footer.vue'
 export default {
   name: 'App',
-  components: {}
+  components: {
+    Layout
+  }
 }
 </script>
 
 <style scoped>
+.index {
+  background-color: #404a60;
+}
 .p-class {
-  font-size: 70px;
+  font-size: 75px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   color: #66cc99;
-  letter-spacing: 3px;
-  line-height: 4.5rem;
+  letter-spacing: 1px;
+  line-height: 6rem;
+  /* text-align: center; */
+  text-transform: uppercase;
 }
 .mint-fuse {
   color: whitesmoke;
   /* padding: 3px; */
 }
 .main-heading {
-  padding-top: 200px;
+  text-align: center;
+  padding-top: 150px;
 }
 /* Basic styling */
 /* svg {
@@ -264,11 +414,13 @@ h3 {
   position: absolute;
 }
 .header-text {
-  animation: fadeIn ease infinite;
-  animation-duration: 7s;
+  animation: fadeInUp 2s ease;
+  /* animation-duration: 7s; */
   padding-bottom: 0;
+  text-align: center;
+  display: block;
 }
-.header-text h1 {
+/* .header-text h1 {
   animation: showFirst 21s infinite;
 }
 .header-text h2 {
@@ -309,14 +461,16 @@ h3 {
   100% {
     opacity: 0;
   }
-}
+} */
 .u-header {
   padding-top: 0px;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 3px;
 }
 .text-u-header {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 29px;
+  font-weight: 500;
   font-family: 'Raleway';
   color: aquamarine;
   display: inline-block;
@@ -325,65 +479,69 @@ h3 {
 }
 .text-u-header2 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 29px;
   font-family: 'Raleway';
+  font-weight: 700;
   color: aquamarine;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  font-weight: 800;
 }
 
 .text-u-header:first-of-type {
-  /* For increasing performance 
-  ID/Class should've been used. 
-  For a small demo 
+  /* For increasing performance
+  ID/Class should've been used.
+  For a small demo
   It's okaish for now */
-  animation: showup 7s ease-in-out infinite;
-  /* animation-delay: 1s; */
+  animation: showup 3s ease;
 }
 .text-u-header2:first-of-type {
-  /* For increasing performance 
-  ID/Class should've been used. 
-  For a small demo 
+  /* For increasing performance
+  ID/Class should've been used.
+  For a small demo
   it's okaish for now */
-  animation: showup 7s ease-in-out infinite;
+  animation: showup 3s ease-in-out;
 }
 
 .text-u-header:last-of-type {
-  width: 0px;
-  animation: reveal 7s ease-in-out infinite;
+  /* width: 0px; */
+  animation: reveal 7s ease-in-out;
 }
 .text-u-header2:last-of-type {
-  width: 0px;
-  animation: reveal 7s ease-in-out infinite;
+  /* width: 0px; */
+  animation: reveal 7s ease-in-out;
 }
 
 .text-u-header2:last-of-type span {
-  margin-left: -700px;
-  animation: slidein 7s infinite;
+  /* margin-left: -413px; */
+  animation: slidein 7s;
 }
-
-/* @keyframes showup {
+.flip-text {
+  color: #66cc99;
+  padding-left: 4px;
+}
+@keyframes showup {
   0% {
     opacity: 0;
   }
-  20% {
-    opacity: 1;
+  40% {
+    opacity: 0;
   }
   80% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
-} */
+}
 
 @keyframes slidein {
   0% {
-    margin-left: -800px;
+    margin-left: -413px;
   }
   20% {
-    margin-left: -800px;
+    margin-left: -413px;
   }
   35% {
     margin-left: 0px;
@@ -403,14 +561,92 @@ h3 {
     width: 0px;
   }
   30% {
-    width: 700px;
+    width: 413px;
   }
   80% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
-    width: 700px;
+    opacity: 1;
+    width: 413px;
   }
+}
+.index-2-cont {
+  padding: 0;
+}
+.index-2-headertext {
+  /* text-align: center; */
+  /* padding-top: 150px; */
+  padding-top: 300px;
+  justify-content: center;
+}
+.about-us {
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: 'Raleway';
+  font-weight: normal;
+  /* animation: slideInLeft 3s ease; */
+}
+.index-2-uheader {
+  text-align: center;
+  padding-top: 0;
+  font-size: 25px;
+  font-family: 'Raleway';
+}
+.index-3-cont {
+  padding: 0;
+}
+.index-3-headertext {
+  /* text-align: center; */
+  /* padding-top: 150px; */
+  padding-top: 300px;
+  justify-content: center;
+}
+.index-3-headertext {
+  /* text-align: center; */
+  /* padding-top: 150px; */
+  padding-top: 300px;
+  justify-content: center;
+}
+.our-services {
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: 'Raleway';
+  font-weight: normal;
+  /* animation: slideInLeft 3s ease; */
+}
+.index-3-uheader {
+  text-align: center;
+  padding-top: 0;
+  font-size: 25px;
+  font-family: 'Raleway';
+}
+.index-4-cont {
+  padding: 0;
+}
+.index-3-headertext {
+  /* text-align: center; */
+  /* padding-top: 150px; */
+  padding-top: 300px;
+  justify-content: center;
+}
+.index-4-headertext {
+  /* text-align: center; */
+  /* padding-top: 150px; */
+  padding-top: 300px;
+  justify-content: center;
+}
+.our-expertise {
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: 'Raleway';
+  font-weight: normal;
+  /* animation: slideInLeft 3s ease; */
+}
+.index-4-uheader {
+  text-align: center;
+  padding-top: 0;
+  font-size: 25px;
+  font-family: 'Raleway';
 }
 </style>

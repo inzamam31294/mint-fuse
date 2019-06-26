@@ -5,7 +5,6 @@
       type="text/css"
       href="//fonts.googleapis.com/css?family=Raleway:400,500,600"
     />
-    <title>MintFuse</title>
     <!-- <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -35,7 +34,9 @@
       fixed
       app
       flat
-      color="rgba(255,255,255,0)"
+      scroll-threshold="200"
+      scroll-off-screen
+      color="#404a60"
       height="150"
       class="main-toolbar"
     >
@@ -53,8 +54,8 @@
         <a href="/">
           <v-img
             src="https://files.slack.com/files-pri/T3UCG9LPL-FKPS739B2/logo-01.png"
-            height="100"
-            width="288"
+            height="110"
+            width="290"
           />
         </a>
       </v-toolbar-title>
@@ -78,11 +79,16 @@
         </v-container>
       </v-toolbar-items>
     </v-toolbar>
-    <v-content class="container">
+    <!-- <v-content>
       <v-container fluid px-5>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-content> -->
+    <!-- <v-content>
+      <div px-5>
+        <nuxt />
+      </div>
+    </v-content> -->
     <!-- <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
@@ -100,9 +106,9 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer> -->
-    <v-footer :fixed="fixed" dark color="#404a60">
+    <!-- <v-footer :fixed="fixed" dark color="#404a60">
       <span>&copy; 2019</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 
@@ -134,19 +140,19 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.default {
   background-color: #404a60;
 }
 .main-toolbar {
   padding-top: 20px;
 }
 .main-title-toolbar {
-  margin-left: 40px;
+  margin-left: 32px;
 }
 .btn-toolbar {
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   color: whitesmoke;
   margin: 25px;
