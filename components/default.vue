@@ -37,7 +37,7 @@
       scroll-threshold="200"
       scroll-off-screen
       color="#404a60"
-      height="150"
+      height="180"
       class="main-toolbar"
     >
       <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
@@ -141,10 +141,10 @@ export default {
 
 <style scoped>
 .default {
-  background-color: #404a60;
+  background-color: primary;
 }
 .main-toolbar {
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 .main-title-toolbar {
   margin-left: 32px;

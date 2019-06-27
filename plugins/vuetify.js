@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 import colors from 'vuetify/es5/util/colors'
+import 'vuetify/src/stylus/app.styl'
 import '@mdi/font/css/materialdesignicons.css'
 import '@mdi/font/css/materialdesignicons.min.css'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -16,9 +17,9 @@ Vue.use(VueAnimate)
 
 Vue.use(Vuetify, {
   theme: {
-    primary: colors.blue.darken2,
+    primary: '#404a60',
     accent: colors.grey.darken3,
-    secondary: colors.amber.darken3,
+    secondary: '#66cc99',
     info: colors.teal.lighten1,
     warning: colors.amber.base,
     error: colors.deepOrange.accent4,

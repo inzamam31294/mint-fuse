@@ -175,7 +175,7 @@
               </h1>
             </v-card-title>
             <v-card-text
-              data-aos-delay="500"
+              data-aos-delay="100"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-up"
@@ -213,28 +213,37 @@
             >
               <v-layout>
                 <v-flex xs4>
-                  <v-card
-                    flat
-                    color="#66cc99"
-                    height="500px"
-                    width="580px"
-                  ></v-card>
+                  <v-card flat color="#66cc99" height="520px" width="580px">
+                    <v-card-title class="index-3-c1-title">
+                      web & app<br />
+                      development
+                    </v-card-title>
+                    <v-card-text class="index-3-c-text"
+                      >Software Solutions For Needs</v-card-text
+                    >
+                  </v-card>
                 </v-flex>
                 <v-flex xs4>
-                  <v-card
-                    flat
-                    color="#404a60"
-                    height="500px"
-                    width="580px"
-                  ></v-card>
+                  <v-card flat color="#404a60" height="520px" width="580px">
+                    <v-card-title class="index-3-c2-title">
+                      digital<br />
+                      media
+                    </v-card-title>
+                    <v-card-text class="index-3-c-text"
+                      >Digital Reputation Management</v-card-text
+                    >
+                  </v-card>
                 </v-flex>
                 <v-flex xs4>
-                  <v-card
-                    flat
-                    color="#00bfff"
-                    height="500px"
-                    width="580px"
-                  ></v-card>
+                  <v-card flat color="#00bfff" height="520px" width="580px">
+                    <v-card-title class="index-3-c3-title">
+                      graphic<br />
+                      design
+                    </v-card-title>
+                    <v-card-text class="index-3-c-text"
+                      >Creative Material For Branding</v-card-text
+                    >
+                  </v-card>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -245,7 +254,7 @@
     <v-layout wrap class="index-4">
       <v-container class="index-4-cont" justify-center fluid>
         <v-flex xs12>
-          <v-card height="900px" class="index-4-heading" flat>
+          <v-card height="1000px" class="index-4-heading" flat>
             <v-card-title
               data-aos-duration="2000"
               data-aos-easing="ease"
@@ -264,31 +273,311 @@
             >
               <v-layout>
                 <v-flex xs4>
-                  <v-card
-                    flat
-                    color="#66cc99"
-                    height="500px"
-                    width="580px"
-                  ></v-card>
+                  <v-card flat height="500px" width="580px">
+                    <v-card-title class="index-4-c1-title">
+                      web
+                      <span style="color: #404a60;"> &nbsp;development</span>
+                    </v-card-title>
+                    <v-card-text class="index-4-c1-text">
+                      Nodejs<br />
+                      React, Vue, Ember<br />
+                      PHP, Symphony, Laravel<br />
+                      MySQL, PostgreSQL, MonogoDB<br />
+                      Elastic
+                    </v-card-text>
+                  </v-card>
                 </v-flex>
                 <v-flex xs4>
-                  <v-card
-                    flat
-                    color="#404a60"
-                    height="500px"
-                    width="580px"
-                  ></v-card>
+                  <v-card flat height="500px" width="580px">
+                    <v-card-title class="index-4-c2-title">
+                      mobile
+                      <span style="color: #404a60;"> &nbsp;development</span>
+                    </v-card-title>
+                    <v-card-text class="index-4-c2-text">
+                      React Native<br />
+                      Swift<br />
+                      IOS<br />
+                      Java<br />
+                      Android
+                    </v-card-text>
+                  </v-card>
                 </v-flex>
                 <v-flex xs4>
-                  <v-card
-                    flat
-                    color="#00bfff"
-                    height="500px"
-                    width="580px"
-                  ></v-card>
+                  <v-card flat height="500px" width="580px">
+                    <v-card-title class="index-4-c2-title">
+                      machine
+                      <span style="color: #404a60;"> &nbsp;learning</span>
+                    </v-card-title>
+                    <v-card-text class="index-4-c3-text">
+                      Python<br />
+                      Natural Language Processing
+                    </v-card-text>
+                  </v-card>
                 </v-flex>
               </v-layout>
             </v-container>
+          </v-card>
+        </v-flex>
+      </v-container>
+    </v-layout>
+    <v-layout wrap class="index-5">
+      <v-container class="index-5-cont" justify-center fluid>
+        <v-flex xs12>
+          <v-card height="1250px" class="index-5-heading" flat>
+            <v-card-title
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+              class="index-5-headertext"
+            >
+              <h1 class="what-we-do">
+                what we<span style="font-weight: bold;"> do</span>
+              </h1>
+            </v-card-title>
+            <v-container class="index-5-cont2" text-xs-center fluid>
+              <v-layout>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-right"
+                  >
+                    <v-card-title class="index-5-c1-title">
+                      web
+                      <span style="color: #66cc99;"> &nbsp;design</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c1-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-up"
+                  >
+                    <v-card-title class="index-5-c2-title">
+                      graphic
+                      <span style="color: #66cc99;"> &nbsp;design</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c2-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-left"
+                  >
+                    <v-card-title class="index-5-c2-title">
+                      web
+                      <span style="color: #66cc99;"> &nbsp;maintaince</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c3-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+            <v-container class="index-5-cont2" text-xs-center fluid>
+              <v-layout>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-right"
+                  >
+                    <v-card-title class="index-5-c1-title">
+                      web
+                      <span style="color: #66cc99;"> &nbsp;development</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c1-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-up"
+                  >
+                    <v-card-title class="index-5-c2-title">
+                      app
+                      <span style="color: #66cc99;"> &nbsp;development</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c2-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-left"
+                  >
+                    <v-card-title class="index-5-c2-title">
+                      digital
+                      <span style="color: #66cc99;"> &nbsp;marketing</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c3-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+            <v-container class="index-5-cont2" text-xs-center fluid>
+              <v-layout>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-right"
+                  >
+                    <v-card-title class="index-5-c1-title">
+                      e-
+                      <span style="color: #66cc99;"> &nbsp;commerce</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c1-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs4 class="index-5-flex">
+                  <v-card
+                    class="index-5-card"
+                    flat
+                    height="250px"
+                    width="580px"
+                    color="#404a60"
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-up"
+                  >
+                    <v-card-title class="index-5-c2-title">
+                      social
+                      <span style="color: #66cc99;"> &nbsp;media</span>
+                    </v-card-title>
+                    <v-card-text class="index-5-c2-text">
+                      Our fresh design concepts<br />
+                      give an amazing user expe- <br />rience which translates
+                      to<br />
+                      return customers & gener- <br />ate business
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
+        </v-flex>
+      </v-container>
+    </v-layout>
+    <v-layout wrap class="index-6">
+      <v-container class="index-6-cont" justify-center fluid>
+        <v-flex xs12>
+          <v-card height="800px" class="index-6-heading" flat>
+            <v-card-title
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+              class="index-6-headertext"
+            >
+              <h1 class="why-choose-us">
+                why<span style="font-weight: bold;"> choose us</span>
+              </h1>
+            </v-card-title>
+            <v-card-text
+              data-aos-delay="100"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-up"
+              class="index-6-uheader"
+              >We understand the client, assess their needs and gather team set
+              to reach<br />
+              target goals. Your goals can be as varied as building software for
+              a retail<br />
+              store to designing a logo for your new brand. We reach these goals
+              with our<br />
+              team of expert programmers, coders, UI/UX designers, web
+              developers,<br />
+              application developers, digital media strategists, social media
+              marketers,<br />
+              and SEO & SEM fanatics that employ their best skills and expertise
+              to deliver a<br />
+              successful project. We provide unparalleled support to our clients
+              who grow<br />
+              their business and get to enjoy the praise.
+            </v-card-text>
           </v-card>
         </v-flex>
       </v-container>
@@ -318,12 +607,10 @@ export default {
   color: #66cc99;
   letter-spacing: 1px;
   line-height: 6rem;
-  /* text-align: center; */
   text-transform: uppercase;
 }
 .mint-fuse {
   color: whitesmoke;
-  /* padding: 3px; */
 }
 .main-heading {
   text-align: center;
@@ -490,17 +777,9 @@ h3 {
 }
 
 .text-u-header:first-of-type {
-  /* For increasing performance
-  ID/Class should've been used.
-  For a small demo
-  It's okaish for now */
   animation: showup 3s ease;
 }
 .text-u-header2:first-of-type {
-  /* For increasing performance
-  ID/Class should've been used.
-  For a small demo
-  it's okaish for now */
   animation: showup 3s ease-in-out;
 }
 
@@ -575,8 +854,6 @@ h3 {
   padding: 0;
 }
 .index-2-headertext {
-  /* text-align: center; */
-  /* padding-top: 150px; */
   padding-top: 300px;
   justify-content: center;
 }
@@ -585,7 +862,6 @@ h3 {
   font-size: 75px;
   font-family: 'Raleway';
   font-weight: normal;
-  /* animation: slideInLeft 3s ease; */
 }
 .index-2-uheader {
   text-align: center;
@@ -597,23 +873,15 @@ h3 {
   padding: 0;
 }
 .index-3-headertext {
-  /* text-align: center; */
-  /* padding-top: 150px; */
-  padding-top: 300px;
+  padding-top: 200px;
   justify-content: center;
 }
-.index-3-headertext {
-  /* text-align: center; */
-  /* padding-top: 150px; */
-  padding-top: 300px;
-  justify-content: center;
-}
+
 .our-services {
   text-transform: uppercase;
   font-size: 75px;
   font-family: 'Raleway';
   font-weight: normal;
-  /* animation: slideInLeft 3s ease; */
 }
 .index-3-uheader {
   text-align: center;
@@ -621,18 +889,54 @@ h3 {
   font-size: 25px;
   font-family: 'Raleway';
 }
+
+.index-3-c1-title {
+  font-size: 40px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  color: #404a60;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  padding-top: 160px;
+  line-height: 3.2rem;
+  letter-spacing: 3px;
+}
+.index-3-c2-title {
+  font-size: 40px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  padding-top: 160px;
+  line-height: 3.2rem;
+  letter-spacing: 3px;
+}
+.index-3-c3-title {
+  font-size: 40px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  color: #404a60;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  padding-top: 160px;
+  line-height: 3.2rem;
+  letter-spacing: 3px;
+}
+.index-3-c-text {
+  font-family: 'Raleway';
+  font-size: 18px;
+  color: whitesmoke;
+  padding-top: 0;
+  letter-spacing: 2px;
+}
 .index-4-cont {
   padding: 0;
 }
-.index-3-headertext {
-  /* text-align: center; */
-  /* padding-top: 150px; */
-  padding-top: 300px;
-  justify-content: center;
-}
 .index-4-headertext {
-  /* text-align: center; */
-  /* padding-top: 150px; */
   padding-top: 300px;
   justify-content: center;
 }
@@ -641,9 +945,175 @@ h3 {
   font-size: 75px;
   font-family: 'Raleway';
   font-weight: normal;
-  /* animation: slideInLeft 3s ease; */
 }
-.index-4-uheader {
+
+.index-4-c1-title {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  color: #66cc99;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+.index-4-c2-title {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  color: #66cc99;
+  justify-content: center;
+  padding-bottom: 0;
+}
+.index-4-c3-title {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  color: #66cc99;
+  justify-content: center;
+  padding-bottom: 0;
+}
+.index-4-c1-text {
+  text-align: left;
+  padding-left: 170px;
+  padding-top: 0;
+  font-family: 'Raleway';
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 2.7rem;
+  letter-spacing: 1.5px;
+}
+.index-4-c2-text {
+  text-align: left;
+  padding-left: 154px;
+  padding-top: 0;
+  font-family: 'Raleway';
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 2.7rem;
+  letter-spacing: 1.5px;
+}
+.index-4-c3-text {
+  text-align: left;
+  padding-left: 170px;
+  padding-top: 0;
+  font-family: 'Raleway';
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 2.7rem;
+  letter-spacing: 1.5px;
+}
+
+.index-5-cont {
+  padding: 0;
+}
+.index-5-heading {
+  background-color: #404a60;
+}
+.index-5-headertext {
+  color: aquamarine;
+  padding-top: 300px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.what-we-do {
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: 'Raleway';
+  font-weight: normal;
+}
+/* .index-5-flex {
+  padding: 0;
+} */
+.index-5-c1-title {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  padding-top: 0;
+  /* padding-bottom: 0; */
+}
+.index-5-c2-title {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  color: whitesmoke;
+  justify-content: center;
+  padding-top: 0;
+  /* padding-bottom: 0; */
+}
+.index-5-c3-title {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: bold;
+  color: whitesmoke;
+  justify-content: center;
+  padding-top: 0;
+  /* padding-bottom: 0; */
+}
+.index-5-c1-text {
+  text-align: left;
+  padding-left: 170px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Raleway';
+  font-size: 19px;
+  font-weight: 600;
+  /* line-height: 2.7rem; */
+  letter-spacing: 1.5px;
+  color: whitesmoke;
+}
+.index-5-c2-text {
+  text-align: left;
+  padding-left: 154px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Raleway';
+  font-size: 19px;
+  font-weight: 600;
+  /* line-height: 2.7rem; */
+  letter-spacing: 1.5px;
+  color: whitesmoke;
+}
+.index-5-c3-text {
+  text-align: left;
+  padding-left: 170px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Raleway';
+  font-size: 19px;
+  font-weight: 600;
+  /* line-height: 2.7rem; */
+  letter-spacing: 1.5px;
+  color: whitesmoke;
+}
+.index-5-cont2 {
+  padding: 0;
+}
+.index-5-card {
+  color: #404a60;
+}
+.index-6-cont {
+  padding: 0;
+}
+.index-6-headertext {
+  padding-top: 300px;
+  justify-content: center;
+}
+.why-choose-us {
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: 'Raleway';
+  font-weight: normal;
+}
+.index-6-uheader {
   text-align: center;
   padding-top: 0;
   font-size: 25px;
