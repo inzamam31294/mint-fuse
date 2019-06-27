@@ -273,7 +273,15 @@
             >
               <v-layout>
                 <v-flex xs4>
-                  <v-card flat height="500px" width="580px">
+                  <v-card
+                    flat
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-right"
+                    height="500px"
+                    width="580px"
+                  >
                     <v-card-title class="index-4-c1-title">
                       web
                       <span style="color: #404a60;"> &nbsp;development</span>
@@ -288,7 +296,15 @@
                   </v-card>
                 </v-flex>
                 <v-flex xs4>
-                  <v-card flat height="500px" width="580px">
+                  <v-card
+                    flat
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-up"
+                    height="500px"
+                    width="580px"
+                  >
                     <v-card-title class="index-4-c2-title">
                       mobile
                       <span style="color: #404a60;"> &nbsp;development</span>
@@ -303,7 +319,15 @@
                   </v-card>
                 </v-flex>
                 <v-flex xs4>
-                  <v-card flat height="500px" width="580px">
+                  <v-card
+                    flat
+                    data-aos-delay="100"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease"
+                    data-aos="fade-left"
+                    height="500px"
+                    width="580px"
+                  >
                     <v-card-title class="index-4-c2-title">
                       machine
                       <span style="color: #404a60;"> &nbsp;learning</span>
