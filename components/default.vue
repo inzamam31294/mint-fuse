@@ -36,9 +36,8 @@
       flat
       scroll-threshold="200"
       scroll-off-screen
-      color="#404a60"
       height="180"
-      class="main-toolbar"
+      class="main-toolbar accent"
     >
       <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
@@ -140,12 +139,12 @@ export default {
 </script>
 
 <style scoped>
-.default {
+/* .default {
   background-color: primary;
-}
-.main-toolbar {
-  /* padding-top: 20px; */
-}
+} */
+/* .main-toolbar {
+  padding-top: 20px;
+} */
 .main-title-toolbar {
   margin-left: 32px;
 }
@@ -157,9 +156,9 @@ export default {
   color: whitesmoke;
   margin: 25px;
 }
-.toolbar-nav {
+/* .toolbar-nav {
   margin-right: 40px;
   margin-bottom: 15px;
   margin-left: 15px;
-}
+} */
 </style>

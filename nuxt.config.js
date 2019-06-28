@@ -1,4 +1,4 @@
-const colors = require('vuetify/es5/util/colors').default
+// const colors = require('vuetify/es5/util/colors').default
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 module.exports = {
@@ -58,17 +58,17 @@ module.exports = {
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
    */
-  vuetify: {
-    theme: {
-      primary: colors.blue.darken2,
-      accent: colors.grey.darken3,
-      secondary: colors.amber.darken3,
-      info: colors.teal.lighten1,
-      warning: colors.amber.base,
-      error: colors.deepOrange.accent4,
-      success: colors.green.accent3
-    }
-  },
+  // vuetify: {
+  //   theme: {
+  //     primary: '#404a60',
+  //     accent: '#ffffff',
+  //     secondary: '#66cc99'
+  //     info: colors.teal.lighten1,
+  //     warning: colors.amber.base,
+  //     error: colors.deepOrange.accent4,
+  //     success: colors.green.accent3
+  //   }
+  // },
   /*
    ** Build configuration
    */
