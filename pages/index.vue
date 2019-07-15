@@ -34,10 +34,16 @@
                 <div class="text-u-header">
                   we are an enthusiastic team of
                 </div>
-                <div class="text-u-header2" style="font-weight: 800;">
-                  <span class="flip-text" style="color: #66cc99;"
-                    >software developers</span
-                  >
+                <div
+                  class="text-u-header2"
+                  style="font-weight: 800; color: #66cc99;"
+                >
+                  <span class="flip-text1">software developers </span>
+                  <span class="flip-text2">web developers </span>
+                  <span class="flip-text3">programmers </span>
+                  <span class="flip-text4">content writers </span>
+                  <span class="flip-text5">social media marketing </span>
+                  <span class="flip-text6">creative people </span>
                 </div>
               </v-card-text>
             </v-card>
@@ -658,12 +664,16 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
 }
+.text-u-header2 {
+  height: 42px;
+  width: 442px;
+}
+.text-u-header2 span {
+  display: block;
+  text-align: left;
+}
 .text-u-header {
   animation: showup 4s ease;
-}
-.text-u-header2 {
-  /* width: 0px; */
-  animation: reveal 7s;
 }
 .text-u-header span {
   /* margin-left: -413px; */
@@ -672,6 +682,15 @@ h3 {
 .text-u-header2 span {
   /* margin-left: -413px; */
   animation: slidein 7s;
+  /* margin-top: 0;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; */
+}
+.text-u-header2 {
+  /* width: 0px; */
+  animation: reveal 7s;
+  /* opacity: 0; */
 }
 @keyframes showup {
   0% {
@@ -711,14 +730,41 @@ h3 {
     width: 0px;
   }
   30% {
-    width: 408px;
+    width: 443px;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    width: 408px;
+    width: 443px;
+  }
+}
+@keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -17%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -33%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -50%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -67%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -84%, 0);
   }
 }
 .index-2-cont {

@@ -238,3 +238,96 @@
     opacity: 0;
   }
 } */
+
+data-aos-delay="2000"
+data-aos-easing="ease"
+data-aos="flip-up"
+
+
+/* .text-u-header2 .flip-text1 {
+  animation: showfirst 21s infinite;
+}
+.text-u-header2 .flip-text2 {
+  animation: showsecond 21s infinite;
+}
+.text-u-header2 .flip-text3 {
+  animation: showthird 21s infinite;
+}
+.text-u-header2 .flip-text4 {
+  animation: showfourth 21s infinite;
+}
+.text-u-header2 .flip-text5 {
+  animation: showfifth 21s infinite;
+}
+.text-u-header2 .flip-text6 {
+  animation: showsixth 21s infinite;
+} */
+/* @keyframes showfirst {
+  0%,
+  16% {
+    opacity: 1;
+  }
+  16.2%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showsecond {
+  16.2%,
+  33% {
+    opacity: 1;
+  }
+  0%,
+  16.1%,
+  33.1%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showthird {
+  33.3%,
+  50% {
+    opacity: 1;
+  }
+  0%,
+  33.2%,
+  50.1%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showfourth {
+  50.3%,
+  66% {
+    opacity: 1;
+  }
+  0%,
+  50.2%,
+  66.1%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showfifth {
+  66.2%,
+  83% {
+    opacity: 1;
+  }
+  0%,
+  66.1%,
+  83.1%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showsixth {
+  83.3%,
+  99% {
+    opacity: 1;
+  }
+  0%,
+  83.2%,
+  100% {
+    opacity: 0;
+  }
+} */

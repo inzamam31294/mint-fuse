@@ -30,10 +30,9 @@
       </v-list>
     </v-navigation-drawer> -->
     <v-toolbar
-      :clipped-left="clipped"
+      flat
       fixed
       app
-      flat
       scroll-threshold="200"
       scroll-off-screen
       height="180"
@@ -60,13 +59,21 @@
       </v-toolbar-title>
       <v-spacer />
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-container>
+        <v-btn
+          v-for="item in items"
+          :key="item.icon"
+          class="btn-toolbar"
+          :to="item.to"
+          flat
+          >{{ item.title }}</v-btn
+        >
+        <!-- <v-container>
           <a class="btn-toolbar" to="#" dark flat>home</a>
           <a class="btn-toolbar" to="#" dark flat>what we do</a>
           <a class="btn-toolbar" to="#" dark flat>services</a>
           <a class="btn-toolbar" to="#" dark flat>about us</a>
           <a class="btn-toolbar" to="#" dark flat>contact</a>
-          <!-- <v-btn
+          <v-btn
             class="toolbar-nav"
             icon
             dark
@@ -74,9 +81,28 @@
             @click.stop="rightDrawer = !rightDrawer"
           >
             <v-icon x-large>menu</v-icon>
-          </v-btn> -->
-        </v-container>
+          </v-btn>
+        </v-container> -->
       </v-toolbar-items>
+      <v-menu class="hidden-md-and-up">
+        <v-toolbar-side-icon slot="activator" dark></v-toolbar-side-icon>
+        <v-list>
+          <v-list-tile
+            v-for="(item, i) in items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+          >
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="item.title" />
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
     </v-toolbar>
     <!-- <v-content>
       <v-container fluid px-5>
@@ -120,19 +146,39 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
+          icon: 'home',
+          title: 'home',
+          to: '#'
         },
         {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'apps',
+          title: 'what we do',
+          to: '#'
+        },
+        {
+          icon: 'home',
+          title: 'services',
+          to: '#'
+        },
+        {
+          icon: 'info',
+          title: 'about us',
+          to: '#'
+        },
+        {
+          icon: 'home',
+          title: 'contact',
+          to: '#'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false
+    }
+  },
+  methods: {
+    menuItems() {
+      return this.items
     }
   }
 }
