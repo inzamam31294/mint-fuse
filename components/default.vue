@@ -5,6 +5,8 @@
       type="text/css"
       href="//fonts.googleapis.com/css?family=Raleway:400,500,600"
     />
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue2-smooth-scroll"></script>
     <!-- <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -148,7 +150,7 @@ export default {
         {
           icon: 'home',
           title: 'home',
-          to: '#'
+          to: '/'
         },
         {
           icon: 'apps',

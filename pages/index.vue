@@ -109,7 +109,7 @@
                     <v-card
                       slot-scope="{ hover }"
                       flat
-                      class="secondary"
+                      class="our-service-cards secondary"
                       height="520px"
                       width="580px"
                     >
@@ -126,14 +126,10 @@
                           class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
                         >
                           <div style="line-height:2rem; margin-top:120px;">
-                            <span
-                              style="text-transform:uppercase; font-weight:bold; font-size:30px; "
+                            <span class="upper-text" style=""
                               >web & app development</span
                             >
-                            <div
-                              class="under-text"
-                              style=" font-size:19px; font-weight:normal;"
-                            >
+                            <div class="under-text" style="">
                               Software Solutions For Needs<br /><br />
                               Do away with the hassle of<br />
                               repeated changes and start making profits
@@ -154,7 +150,7 @@
                     <v-card
                       slot-scope="{ hover }"
                       flat
-                      class="accent"
+                      class="our-service-cards accent"
                       height="520px"
                       width="580px"
                     >
@@ -174,15 +170,10 @@
                             class="hover-text"
                             style="line-height:2rem; margin-top:120px;"
                           >
-                            <span
-                              style="text-transform:uppercase; font-weight:bold; font-size:30px; "
-                            >
+                            <span class="upper-text" style="">
                               digital media</span
                             >
-                            <div
-                              class="under-text"
-                              style=" font-size:19px; font-weight:normal;"
-                            >
+                            <div class="under-text" style="">
                               Digital Reputation Management<br /><br />
                               Our digital & social media team<br />
                               creates impactful experiences for your audience<br />
@@ -204,7 +195,7 @@
                     <v-card
                       slot-scope="{ hover }"
                       flat
-                      class="tertiary"
+                      class="our-service-cards tertiary"
                       height="520px"
                       width="580px"
                     >
@@ -221,15 +212,10 @@
                           class="d-flex transition-fast-in-fast-out secondary v-card--reveal white--text"
                         >
                           <div style="line-height:2rem; margin-top:120px;">
-                            <span
-                              style="text-transform:uppercase; font-weight:bold; font-size:30px; "
-                            >
+                            <span class="upper-text" style="">
                               graphic design</span
                             >
-                            <div
-                              class="under-text"
-                              style=" font-size:19px; font-weight:normal;"
-                            >
+                            <div class="under-text" style="">
                               Creative Material For Successful Branding And
                               Messaging<br /><br />
                               We convert pixel-perfect designs into<br />
@@ -375,15 +361,23 @@
                     data-aos-easing="ease"
                     data-aos="fade-right"
                   >
-                    <v-card-title class="index-5-c1-title">
-                      web
+                    <v-card-title
+                      class="index-5-c1-title"
+                      style="padding-right:180px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FL1A70YTH/final_layout-14.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />&nbsp;&nbsp;&nbsp;web
                       <span style="color: #66cc99;"> &nbsp;design</span>
                     </v-card-title>
                     <v-card-text class="index-5-c1-text">
                       Our fresh design concepts<br />
                       give an amazing user expe- <br />rience which translates
                       to<br />
-                      return customers & gener- <br />ate business
+                      return customers & gener- <br />ate business.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -399,15 +393,24 @@
                     data-aos-easing="ease"
                     data-aos="fade-up"
                   >
-                    <v-card-title class="index-5-c2-title">
-                      graphic
+                    <v-card-title
+                      class="index-5-c2-title"
+                      style="padding-right:160px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FKN2DDKAN/final_layout-11.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />
+                      &nbsp;&nbsp;&nbsp;graphic
                       <span style="color: #66cc99;"> &nbsp;design</span>
                     </v-card-title>
                     <v-card-text class="index-5-c2-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      From business cards to<br />
+                      print media, UI/UX to<br />social media posts, logo<br />
+                      design to profile design, we<br />
+                      have got it all covered.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -423,15 +426,23 @@
                     data-aos-easing="ease"
                     data-aos="fade-left"
                   >
-                    <v-card-title class="index-5-c2-title">
-                      web
+                    <v-card-title
+                      class="index-5-c3-title"
+                      style="padding-right:125px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FKZ0Q06EQ/final_layout-16.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />&nbsp;&nbsp;&nbsp;web
                       <span style="color: #66cc99;"> &nbsp;maintaince</span>
                     </v-card-title>
                     <v-card-text class="index-5-c3-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      We bring simple, direct<br />
+                      and cost effective ap<br />-proach to help maintain<br />
+                      your existing website up to<br />
+                      the standards of your busi<br />-ness.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -451,15 +462,24 @@
                     data-aos-easing="ease"
                     data-aos="fade-right"
                   >
-                    <v-card-title class="index-5-c1-title">
-                      web
+                    <v-card-title
+                      class="index-5-c1-title"
+                      style="padding-right:90px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FL1JU6A2J/final_layout-10.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />&nbsp;&nbsp;&nbsp;web
                       <span style="color: #66cc99;"> &nbsp;development</span>
                     </v-card-title>
                     <v-card-text class="index-5-c1-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      Get a purely functional<br />
+                      and scalable website. You<br />
+                      want to choose a platform<br />
+                      or custom make a website,<br />
+                      we can do it all.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -475,15 +495,23 @@
                     data-aos-easing="ease"
                     data-aos="fade-up"
                   >
-                    <v-card-title class="index-5-c2-title">
-                      app
+                    <v-card-title
+                      class="index-5-c2-title"
+                      style="padding-right:140px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FKN2DDKBL/final_layout-12.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />
+                      &nbsp;&nbsp;&nbsp;app
                       <span style="color: #66cc99;"> &nbsp;development</span>
                     </v-card-title>
                     <v-card-text class="index-5-c2-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      For businesses of all sizes<br />
+                      and industries, we can<br />
+                      custom design an applica<br />-tion to fit your require<br />-ments.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -499,15 +527,24 @@
                     data-aos-easing="ease"
                     data-aos="fade-left"
                   >
-                    <v-card-title class="index-5-c2-title">
-                      digital
+                    <v-card-title
+                      class="index-5-c3-title"
+                      style="padding-right:100px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FKZEW3Z29/final_layout-17.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />
+                      &nbsp;&nbsp;&nbsp;digital
                       <span style="color: #66cc99;"> &nbsp;marketing</span>
                     </v-card-title>
                     <v-card-text class="index-5-c3-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      We empower your brand<br />
+                      digitaly to get business<br />
+                      leads, and get more con<br />-versions through internet<br />
+                      marketing.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -527,15 +564,23 @@
                     data-aos-easing="ease"
                     data-aos="fade-right"
                   >
-                    <v-card-title class="index-5-c1-title">
-                      e-
+                    <v-card-title
+                      class="index-5-c1-title"
+                      style="padding-right:160px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FKZEW3XEH/final_layout-13.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />
+                      &nbsp;&nbsp;&nbsp;e-
                       <span style="color: #66cc99;"> &nbsp;commerce</span>
                     </v-card-title>
                     <v-card-text class="index-5-c1-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      Let us create feature-rich<br />
+                      E-commerce store to help<br />
+                      you set up an online busi<br />-ness.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -551,15 +596,23 @@
                     data-aos-easing="ease"
                     data-aos="fade-up"
                   >
-                    <v-card-title class="index-5-c2-title">
-                      social
+                    <v-card-title
+                      class="index-5-c2-title"
+                      style="padding-right:200px;"
+                    >
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FKN2TMM43/final_layout-15.png"
+                        contain
+                        height="60px"
+                        width="60px"
+                      />&nbsp;&nbsp;&nbsp;social
                       <span style="color: #66cc99;"> &nbsp;media</span>
                     </v-card-title>
                     <v-card-text class="index-5-c2-text">
-                      Our fresh design concepts<br />
-                      give an amazing user expe- <br />rience which translates
-                      to<br />
-                      return customers & gener- <br />ate business
+                      We use the power of social<br />
+                      media to reach a greater<br />
+                      audience at the right time<br />
+                      in the right place.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -676,11 +729,9 @@ h3 {
   animation: showup 4s ease;
 }
 .text-u-header span {
-  /* margin-left: -413px; */
   animation: slidein 7s;
 }
 .text-u-header2 span {
-  /* margin-left: -413px; */
   animation: slidein 7s;
   /* margin-top: 0;
   animation-name: change;
@@ -688,9 +739,7 @@ h3 {
   animation-iteration-count: infinite; */
 }
 .text-u-header2 {
-  /* width: 0px; */
   animation: reveal 7s;
-  /* opacity: 0; */
 }
 @keyframes showup {
   0% {
@@ -848,6 +897,39 @@ h3 {
   padding-top: 0;
   letter-spacing: 2px;
 }
+.upper-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+.under-text {
+  font-size: 19px;
+  font-weight: normal;
+}
+@media (max-width: 1500px) {
+  .our-service-cards {
+    max-height: 480px;
+    max-width: 450px;
+  }
+  .index-3-c1-title,
+  .index-3-c2-title,
+  .index-3-c3-title {
+    font-size: 30px;
+    line-height: 2.2rem;
+  }
+  .upper-text {
+    font-size: 20px;
+  }
+  .under-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1300px) {
+  .our-service-cards {
+    max-height: 480px;
+    max-width: 405px;
+  }
+}
 .index-4-cont {
   padding: 0;
 }
@@ -938,9 +1020,9 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   color: whitesmoke;
-  text-align: center;
-  justify-content: center;
+  display: inline-flex;
   padding-top: 0;
+  padding-bottom: 0;
 }
 .index-5-c2-title {
   text-transform: uppercase;
@@ -948,8 +1030,9 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   color: whitesmoke;
-  justify-content: center;
+  display: inline-flex;
   padding-top: 0;
+  padding-bottom: 0;
 }
 .index-5-c3-title {
   text-transform: uppercase;
@@ -957,8 +1040,9 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   color: whitesmoke;
-  justify-content: center;
+  display: inline-flex;
   padding-top: 0;
+  padding-bottom: 0;
 }
 .index-5-c1-text {
   text-align: left;
