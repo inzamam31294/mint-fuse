@@ -331,3 +331,19 @@ data-aos="flip-up"
     opacity: 0;
   }
 } */
+
+
+
+
+text-u-header
+<div
+                  class="text-u-header2 secondary--text"
+                  style="font-weight: 800;"
+                >
+                  <span class="flip-text1">software developers </span>
+                  <span class="flip-text2">web developers </span>
+                  <span class="flip-text3">programmers </span>
+                  <span class="flip-text4">content writers </span>
+                  <span class="flip-text5">social media marketing </span>
+                  <span class="flip-text6">creative people </span>
+                </div>

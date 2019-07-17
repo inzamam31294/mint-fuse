@@ -60,11 +60,11 @@
         </a>
       </v-toolbar-title>
       <v-spacer />
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items class="hidden-md-and-down">
         <v-btn
           v-for="item in items"
           :key="item.icon"
-          class="btn-toolbar"
+          class="btn-toolbar text-lowercase"
           :to="item.to"
           flat
           >{{ item.title }}</v-btn
@@ -86,8 +86,11 @@
           </v-btn>
         </v-container> -->
       </v-toolbar-items>
-      <v-menu class="hidden-md-and-up">
-        <v-toolbar-side-icon slot="activator" dark></v-toolbar-side-icon>
+      <v-menu class="hidden-lg-and-up">
+        <v-toolbar-side-icon
+          slot="activator"
+          class="white--text text-lowercase"
+        ></v-toolbar-side-icon>
         <v-list>
           <v-list-tile
             v-for="(item, i) in items"
