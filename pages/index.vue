@@ -86,7 +86,7 @@
     <v-layout wrap class="index-3">
       <v-container class="index-3-cont" justify-center fluid>
         <v-flex xs12>
-          <v-card height="900px" class="index-3-heading" flat>
+          <v-card class="index-3-heading" flat>
             <v-card-title
               data-aos-duration="2000"
               data-aos-easing="ease"
@@ -103,15 +103,14 @@
               text-xs-center
               fluid
             >
-              <v-layout>
-                <v-flex xs4>
+              <v-layout v-bind="binding">
+                <v-flex>
                   <v-hover>
                     <v-card
                       slot-scope="{ hover }"
                       flat
                       class="our-service-cards secondary"
                       height="520px"
-                      width="580px"
                     >
                       <v-card-title class="index-3-c1-title">
                         web & app<br />
@@ -145,14 +144,13 @@
                     </v-card>
                   </v-hover>
                 </v-flex>
-                <v-flex xs4>
+                <v-flex>
                   <v-hover>
                     <v-card
                       slot-scope="{ hover }"
                       flat
                       class="our-service-cards accent"
                       height="520px"
-                      width="580px"
                     >
                       <v-card-title class="index-3-c2-title">
                         digital<br />
@@ -190,14 +188,13 @@
                     </v-card>
                   </v-hover>
                 </v-flex>
-                <v-flex xs4>
+                <v-flex>
                   <v-hover>
                     <v-card
                       slot-scope="{ hover }"
                       flat
                       class="our-service-cards tertiary"
                       height="520px"
-                      width="580px"
                     >
                       <v-card-title class="index-3-c3-title">
                         graphic<br />
@@ -240,7 +237,7 @@
     <v-layout wrap class="index-4">
       <v-container class="index-4-cont" justify-center fluid>
         <v-flex xs12>
-          <v-card height="1000px" class="index-4-heading" flat>
+          <v-card class="index-4-heading" flat>
             <v-card-title
               data-aos-duration="2000"
               data-aos-easing="ease"
@@ -257,16 +254,14 @@
               text-xs-center
               fluid
             >
-              <v-layout>
-                <v-flex xs4>
+              <v-layout v-bind="binding">
+                <v-flex>
                   <v-card
                     flat
                     data-aos-delay="100"
                     data-aos-duration="2000"
                     data-aos-easing="ease"
                     data-aos="fade-right"
-                    height="500px"
-                    width="580px"
                   >
                     <v-card-title class="index-4-c1-title">
                       web
@@ -281,15 +276,13 @@
                     </v-card-text>
                   </v-card>
                 </v-flex>
-                <v-flex xs4>
+                <v-flex>
                   <v-card
                     flat
                     data-aos-delay="100"
                     data-aos-duration="2000"
                     data-aos-easing="ease"
                     data-aos="fade-up"
-                    height="500px"
-                    width="580px"
                   >
                     <v-card-title class="index-4-c2-title">
                       mobile
@@ -304,15 +297,13 @@
                     </v-card-text>
                   </v-card>
                 </v-flex>
-                <v-flex xs4>
+                <v-flex>
                   <v-card
                     flat
                     data-aos-delay="100"
                     data-aos-duration="2000"
                     data-aos-easing="ease"
                     data-aos="fade-left"
-                    height="500px"
-                    width="580px"
                   >
                     <v-card-title class="index-4-c2-title">
                       machine
@@ -330,7 +321,7 @@
         </v-flex>
       </v-container>
     </v-layout>
-    <v-layout wrap class="index-5">
+    <!-- <v-layout wrap class="index-5">
       <v-container class="index-5-cont" justify-center fluid>
         <v-flex xs12>
           <v-card height="1250px" class="index-5-heading accent" flat>
@@ -621,8 +612,8 @@
           </v-card>
         </v-flex>
       </v-container>
-    </v-layout>
-    <v-layout wrap class="index-6">
+    </v-layout> -->
+    <!-- <v-layout wrap class="index-6">
       <v-container class="index-6-cont" justify-center fluid>
         <v-flex xs12>
           <v-card height="900px" class="index-6-heading" flat>
@@ -661,7 +652,7 @@
           </v-card>
         </v-flex>
       </v-container>
-    </v-layout>
+    </v-layout> -->
   </v-app>
 </template>
 
@@ -672,6 +663,13 @@ export default {
   name: 'App',
   components: {
     Layout
+  },
+  computed: {
+    binding() {
+      const binding = {}
+      if (this.$vuetify.breakpoint.mdAndDown) binding.column = true
+      return binding
+    }
   }
 }
 </script>
@@ -909,32 +907,25 @@ h3 {
 @media (max-width: 1500px) {
   .our-service-cards {
     max-height: 480px;
-    max-width: 450px;
   }
-  .index-3-c1-title,
-  .index-3-c2-title,
-  .index-3-c3-title {
-    font-size: 30px;
-    line-height: 2.2rem;
-  }
-  .upper-text {
+  /* .upper-text {
     font-size: 20px;
   }
   .under-text {
     font-size: 14px;
-  }
+  } */
 }
 @media (max-width: 1300px) {
-  .our-service-cards {
-    max-height: 480px;
-    max-width: 405px;
+  .index-3-cont2 {
+    padding: 10px;
   }
 }
 .index-4-cont {
-  padding: 0;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-color: #ffff;
 }
 .index-4-headertext {
-  padding-top: 300px;
   justify-content: center;
 }
 .our-expertise {
@@ -949,7 +940,6 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   color: #66cc99;
-  text-align: center;
   justify-content: center;
   padding-bottom: 0;
 }
@@ -972,8 +962,8 @@ h3 {
   padding-bottom: 0;
 }
 .index-4-c1-text {
-  text-align: left;
-  padding-left: 170px;
+  /* text-align: left; */
+  /* padding-left: 170px; */
   padding-top: 0;
   font-family: 'Raleway';
   font-size: 19px;
@@ -982,8 +972,8 @@ h3 {
   letter-spacing: 1.5px;
 }
 .index-4-c2-text {
-  text-align: left;
-  padding-left: 154px;
+  /* text-align: left; */
+  /* padding-left: 154px; */
   padding-top: 0;
   font-family: 'Raleway';
   font-size: 19px;
@@ -992,8 +982,8 @@ h3 {
   letter-spacing: 1.5px;
 }
 .index-4-c3-text {
-  text-align: left;
-  padding-left: 170px;
+  /* text-align: left; */
+  /* padding-left: 170px; */
   padding-top: 0;
   font-family: 'Raleway';
   font-size: 19px;
