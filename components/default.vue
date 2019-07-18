@@ -32,12 +32,11 @@
       </v-list>
     </v-navigation-drawer> -->
     <v-toolbar
+      scroll-toolbar-off-screen
+      prominent
+      height="auto"
       flat
-      fixed
       app
-      scroll-threshold="200"
-      scroll-off-screen
-      height="180"
       class="main-toolbar accent"
     >
       <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
@@ -54,19 +53,19 @@
         <a href="/">
           <v-img
             src="https://files.slack.com/files-pri/T3UCG9LPL-FKPS739B2/logo-01.png"
-            height="110"
-            width="290"
+            contain
           />
         </a>
       </v-toolbar-title>
       <v-spacer />
-      <v-toolbar-items class="hidden-md-and-down">
+      <v-toolbar-items class="toolbar-items hidden-md-and-down">
         <v-btn
           v-for="item in items"
           :key="item.icon"
           class="btn-toolbar text-lowercase"
           :to="item.to"
           flat
+          depressed
           >{{ item.title }}</v-btn
         >
         <!-- <v-container>
@@ -113,11 +112,6 @@
       <v-container fluid px-5>
         <nuxt />
       </v-container>
-    </v-content> -->
-    <!-- <v-content>
-      <div px-5>
-        <nuxt />
-      </div>
     </v-content> -->
     <!-- <v-navigation-drawer
       v-model="rightDrawer"
@@ -190,26 +184,36 @@ export default {
 </script>
 
 <style scoped>
-/* .default {
-  background-color: primary;
-} */
 /* .main-toolbar {
-  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0);
 } */
 .main-title-toolbar {
-  margin-left: 32px;
+  height: 80px;
+  width: 180px;
+  padding: 15px 15px;
+}
+.toolbar-items {
+  padding: 0 30px;
 }
 .btn-toolbar {
   font-family: 'Raleway', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   color: whitesmoke;
-  margin: 25px;
+  padding: 0 20px;
 }
-/* .toolbar-nav {
-  margin-right: 40px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-} */
+@media (min-width: 700px) {
+  .main-title-toolbar {
+    height: 200px;
+    width: 400px;
+    padding: 35px 40px;
+  }
+}
+@media (min-width: 1500px) {
+  .btn-toolbar {
+    font-size: 25px;
+    padding: 0 30px;
+  }
+}
 </style>

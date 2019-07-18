@@ -16,8 +16,8 @@
       <script>
         AOS.init()
       </script>
-      <v-container text-xs-center>
-        <v-layout justify-center align-center>
+      <v-container>
+        <v-layout>
           <v-flex xl12>
             <v-card class="main-heading accent" flat>
               <v-card-title class="header-text">
@@ -83,17 +83,18 @@ export default {
 
 <style scoped>
 .p-class {
-  font-size: 50px;
+  font-size: 30px;
+  text-align: left;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: #66cc99;
   letter-spacing: 1px;
-  line-height: 4rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
 }
 .main-heading {
-  text-align: center;
-  padding-top: 150px;
+  /* padding-top: 150px; */
+  text-align: left;
 }
 h2 {
   position: absolute;
@@ -104,23 +105,21 @@ h3 {
 .header-text {
   animation: fadeInUp 2s ease;
   padding-bottom: 0;
-  text-align: center;
   display: block;
 }
 .u-header {
   padding-top: 0px;
-  line-height: 3rem;
-  letter-spacing: 3px;
+  line-height: 2rem;
+  letter-spacing: 1px;
 }
 .text-u-header1 {
-  display: inline;
-  /* margin: 0; */
+  /* display: inline; */
+  margin: 0;
 }
 .text-u-header,
 .text-u-header2 {
   text-transform: uppercase;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 10px;
   font-family: 'Raleway';
   display: inline-block;
   overflow: hidden;
@@ -135,6 +134,12 @@ h3 {
 }
 .text-u-header {
   animation: showup 4s ease;
+}
+/* .text-u-header {
+  animation: slidein 7s;
+} */
+.text-u-header2 {
+  animation: slidein 7s;
 }
 .text-u-header2 {
   animation: reveal 7s;

@@ -1,6 +1,6 @@
 <template>
   <v-layout wrap class="index-2">
-    <v-container class="index-2-cont primary" justify-center fluid>
+    <v-container class="index-2-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-2-heading" flat>
           <v-card-title
@@ -10,6 +10,12 @@
             data-aos="fade-right"
             class="index-2-headertext"
           >
+            <v-img
+              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+              contain
+              height="80"
+              width="80"
+            />
             <h1 class="about-us accent--text">
               about<span style="font-weight: bold;"> us</span>
             </h1>
@@ -36,22 +42,32 @@
 <style scoped>
 .index-2-cont {
   padding: 0;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 200px;
 }
 .index-2-headertext {
-  justify-content: center;
+  display: inline-flex;
 }
 .about-us {
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 50px;
+  letter-spacing: 3px;
   font-family: 'Raleway';
   font-weight: normal;
 }
 .index-2-uheader {
   text-align: center;
   padding-top: 0;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Raleway';
+}
+@media (min-width: 1000px) {
+  .about-us {
+    font-size: 75px;
+    letter-spacing: 4px;
+  }
+  .index-2-uheader {
+    font-size: 25px;
+  }
 }
 </style>

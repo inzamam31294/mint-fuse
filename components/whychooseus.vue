@@ -1,6 +1,6 @@
 <template>
   <v-layout wrap class="index-6">
-    <v-container class="index-6-cont primary" justify-center fluid>
+    <v-container class="index-6-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-6-heading" flat>
           <v-card-title
@@ -9,6 +9,12 @@
             data-aos="fade-right"
             class="index-6-headertext"
           >
+            <v-img
+              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+              contain
+              height="80"
+              width="80"
+            />
             <h1 class="why-choose-us accent--text">
               why<span style="font-weight: bold;"> choose us</span>
             </h1>
@@ -44,22 +50,32 @@
 <style scoped>
 .index-6-cont {
   padding: 0;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 200px;
 }
 .index-6-headertext {
-  justify-content: center;
+  display: inline-flex;
 }
 .why-choose-us {
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 50px;
+  letter-spacing: 3px;
   font-family: 'Raleway';
   font-weight: normal;
 }
 .index-6-uheader {
   text-align: center;
   padding-top: 0;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Raleway';
+}
+@media (min-width: 1000px) {
+  .why-choose-us {
+    font-size: 75px;
+    letter-spacing: 4px;
+  }
+  .index-6-uheader {
+    font-size: 25px;
+  }
 }
 </style>

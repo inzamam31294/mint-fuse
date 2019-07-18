@@ -1,6 +1,6 @@
 <template>
   <v-layout wrap class="index-4 primary">
-    <v-container class="index-4-cont" justify-center fluid>
+    <v-container class="index-4-cont" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-4-heading" flat>
           <v-card-title
@@ -9,13 +9,19 @@
             data-aos="fade-right"
             class="index-4-headertext"
           >
+            <v-img
+              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+              contain
+              height="80"
+              width="80"
+            />
             <h1 class="our-expertise accent--text">
               our<span style="font-weight: bold;"> expertise</span>
             </h1>
           </v-card-title>
-          <v-container class="index-4-cont2" text-xs-center fluid>
+          <v-container class="index-4-cont2" grid-list-xl text-xs-center fluid>
             <v-layout row wrap>
-              <v-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex mx-auto xs9 sm9 md9 lg4 xl4>
                 <v-card
                   flat
                   data-aos-delay="100"
@@ -36,7 +42,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex mx-auto xs9 sm9 md9 lg4 xl4>
                 <v-card
                   flat
                   data-aos-delay="100"
@@ -57,7 +63,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex mx-auto xs9 sm9 md9 lg4 xl4>
                 <v-card
                   flat
                   data-aos-delay="100"
@@ -93,11 +99,12 @@
   padding-right: 0;
 } */
 .index-4-headertext {
-  justify-content: center;
+  display: inline-flex;
 }
 .our-expertise {
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 50px;
+  letter-spacing: 3px;
   font-family: 'Raleway';
   font-weight: normal;
 }
@@ -122,5 +129,11 @@
   font-weight: 600;
   line-height: 2.7rem;
   letter-spacing: 1.5px;
+}
+@media (min-width: 1000px) {
+  .our-expertise {
+    font-size: 75px;
+    letter-spacing: 4px;
+  }
 }
 </style>

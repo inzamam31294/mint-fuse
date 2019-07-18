@@ -1,6 +1,6 @@
 <template>
   <v-layout wrap class="index-3">
-    <v-container class="index-3-cont" justify-center fluid>
+    <v-container class="index-3-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-3-heading" flat>
           <v-card-title
@@ -9,6 +9,12 @@
             data-aos="fade-right"
             class="index-3-headertext"
           >
+            <v-img
+              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+              contain
+              height="80"
+              width="80"
+            />
             <h1 class="our-services accent--text">
               our<span style="font-weight: bold;"> services</span>
             </h1>
@@ -21,7 +27,7 @@
                     slot-scope="{ hover }"
                     flat
                     class="our-service-cards secondary"
-                    height="520px"
+                    height="460px"
                   >
                     <v-card-title class="index-3-c1-title accent--text">
                       web & app<br />
@@ -35,7 +41,7 @@
                         v-if="hover"
                         class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
                       >
-                        <div style="line-height:2rem; margin-top:120px;">
+                        <div style="line-height:2rem; margin-top:100px;">
                           <span class="upper-text" style=""
                             >web & app development</span
                           >
@@ -60,7 +66,7 @@
                     slot-scope="{ hover }"
                     flat
                     class="our-service-cards accent"
-                    height="520px"
+                    height="460px"
                   >
                     <v-card-title class="index-3-c2-title white--text">
                       digital<br />
@@ -76,7 +82,7 @@
                       >
                         <div
                           class="hover-text"
-                          style="line-height:2rem; margin-top:120px;"
+                          style="line-height:2rem; margin-top:100px;"
                         >
                           <span class="upper-text"> digital media</span>
                           <div class="under-text" style="">
@@ -102,7 +108,7 @@
                     slot-scope="{ hover }"
                     flat
                     class="our-service-cards tertiary"
-                    height="520px"
+                    height="460px"
                   >
                     <v-card-title class="index-3-c3-title accent--text">
                       graphic<br />
@@ -116,7 +122,7 @@
                         v-if="hover"
                         class="d-flex transition-fast-in-fast-out secondary v-card--reveal white--text"
                       >
-                        <div style="line-height:2rem; margin-top:120px;">
+                        <div style="line-height:2rem; margin-top:100px;">
                           <span class="upper-text"> graphic design</span>
                           <div class="under-text" style="">
                             Creative Material For Successful Branding And
@@ -145,14 +151,16 @@
 <style scoped>
 .index-3-cont {
   padding: 0;
+  padding-top: 200px;
+  /* padding-bottom: 200px; */
 }
 .index-3-headertext {
-  padding-top: 200px;
-  justify-content: center;
+  display: inline-flex;
 }
 .our-services {
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 50px;
+  letter-spacing: 3px;
   font-family: 'Raleway';
   font-weight: normal;
 }
@@ -185,28 +193,12 @@
 .upper-text {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
 }
 .under-text {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: normal;
   line-height: 2rem;
-}
-@media (max-width: 1500px) {
-  .our-service-cards {
-    max-height: 480px;
-  }
-  /* .upper-text {
-    font-size: 20px;
-  }
-  .under-text {
-    font-size: 14px;
-  } */
-}
-@media (max-width: 1300px) {
-  .index-3-cont2 {
-    padding: 10px;
-  }
 }
 .v-card--reveal {
   justify-content: center;
@@ -217,5 +209,30 @@
   font-family: 'Raleway';
   width: 100%;
   height: 100%;
+}
+@media (min-width: 1500px) {
+  .our-service-cards {
+    /* max-height: 480px; */
+  }
+  .upper-text {
+    font-size: 30px;
+  }
+  .under-text {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1100px) {
+  .upper-text {
+    font-size: 30px;
+  }
+  .under-text {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1000px) {
+  .our-services {
+    font-size: 75px;
+    letter-spacing: 4px;
+  }
 }
 </style>
