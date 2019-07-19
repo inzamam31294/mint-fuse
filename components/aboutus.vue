@@ -13,8 +13,7 @@
             <v-img
               src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
               contain
-              height="80"
-              width="80"
+              class="arrow-class"
             />
             <h1 class="about-us accent--text">
               about<span style="font-weight: bold;"> us</span>
@@ -42,24 +41,47 @@
 <style scoped>
 .index-2-cont {
   padding: 0;
-  padding-top: 300px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .index-2-headertext {
   display: inline-flex;
 }
 .about-us {
   text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: 3px;
+  font-size: 25px;
+  letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
+}
+.arrow-class {
+  height: 50px;
+  width: 40px;
 }
 .index-2-uheader {
   text-align: center;
   padding-top: 0;
-  font-size: 20px;
+  font-size: 12px;
   font-family: 'Raleway';
+}
+
+@media (min-width: 700px) {
+  .about-us {
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+  .index-2-uheader {
+    font-size: 20px;
+  }
+  .arrow-class {
+    height: 80px;
+    width: 80px;
+  }
+  .index-2-cont {
+    padding: 0;
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-width: 1000px) {
   .about-us {

@@ -12,8 +12,7 @@
             <v-img
               src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
               contain
-              height="80"
-              width="80"
+              class="arrow-class"
             />
             <h1 class="why-choose-us accent--text">
               why<span style="font-weight: bold;"> choose us</span>
@@ -50,32 +49,51 @@
 <style scoped>
 .index-6-cont {
   padding: 0;
-  padding-top: 300px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .index-6-headertext {
   display: inline-flex;
 }
 .why-choose-us {
   text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: 3px;
+  font-size: 25px;
+  letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
+}
+.arrow-class {
+  height: 50px;
+  width: 40px;
 }
 .index-6-uheader {
   text-align: center;
   padding-top: 0;
-  font-size: 20px;
+  font-size: 12px;
   font-family: 'Raleway';
+}
+@media (min-width: 700px) {
+  .why-choose-us {
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  .index-6-uheader {
+    font-size: 25px;
+  }
+  .arrow-class {
+    height: 80px;
+    width: 80px;
+  }
+  .index-6-cont {
+    padding: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-width: 1000px) {
   .why-choose-us {
     font-size: 75px;
     letter-spacing: 4px;
-  }
-  .index-6-uheader {
-    font-size: 25px;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-layout wrap class="index-4 primary">
-    <v-container class="index-4-cont" text-xs-center fluid>
+    <v-container class="index-4-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-4-heading" flat>
           <v-card-title
@@ -8,12 +8,12 @@
             data-aos-easing="ease"
             data-aos="fade-right"
             class="index-4-headertext"
+            d-inline-flex
           >
             <v-img
               src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
               contain
-              height="80"
-              width="80"
+              class="arrow-class"
             />
             <h1 class="our-expertise accent--text">
               our<span style="font-weight: bold;"> expertise</span>
@@ -90,9 +90,8 @@
 </template>
 <style scoped>
 .index-4-cont {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background-color: #ffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 /* .index-4-cont2 {
   padding-left: 0;
@@ -103,17 +102,22 @@
 }
 .our-expertise {
   text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: 3px;
+  font-size: 25px;
+  letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
+}
+.arrow-class {
+  height: 50px;
+  width: 40px;
+  align-items: initial;
 }
 .index-4-c1-title,
 .index-4-c2-title,
 .index-4-c3-title {
   text-transform: uppercase;
   font-family: 'Raleway';
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #66cc99;
   justify-content: center;
@@ -125,15 +129,48 @@
   text-align: center;
   padding-top: 0;
   font-family: 'Raleway';
-  font-size: 19px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 2.7rem;
+  line-height: 1.5rem;
   letter-spacing: 1.5px;
+}
+@media (min-width: 700px) {
+  .our-expertise {
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  .index-4-c1-title,
+  .index-4-c2-title,
+  .index-4-c3-title {
+    font-size: 30px;
+  }
+  .index-4-c1-text,
+  .index-4-c2-text,
+  .index-4-c3-text {
+    font-size: 15px;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+  }
+  .arrow-class {
+    height: 80px;
+    width: 80px;
+  }
+  .index-4-cont {
+    /* padding-top: 00px; */
+    padding-bottom: 200px;
+  }
 }
 @media (min-width: 1000px) {
   .our-expertise {
     font-size: 75px;
     letter-spacing: 4px;
+  }
+  .index-4-c1-text,
+  .index-4-c2-text,
+  .index-4-c3-text {
+    font-size: 19px;
+    line-height: 2.7rem;
+    letter-spacing: 1.5px;
   }
 }
 </style>

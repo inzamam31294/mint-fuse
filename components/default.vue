@@ -31,14 +31,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer> -->
-    <v-toolbar
-      scroll-toolbar-off-screen
-      prominent
-      height="auto"
-      flat
-      app
-      class="main-toolbar accent"
-    >
+    <v-toolbar prominent height="auto" flat app class="main-toolbar accent">
       <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
@@ -207,13 +200,16 @@ export default {
   .main-title-toolbar {
     height: 200px;
     width: 400px;
-    padding: 35px 40px;
+    padding: 25px 30px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   .btn-toolbar {
     font-size: 25px;
     padding: 0 30px;
+  }
+  .main-title-toolbar {
+    padding: 35px 40px;
   }
 }
 </style>

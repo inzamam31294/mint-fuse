@@ -93,7 +93,6 @@ export default {
   text-transform: uppercase;
 }
 .main-heading {
-  /* padding-top: 150px; */
   text-align: left;
 }
 h2 {
@@ -109,27 +108,26 @@ h3 {
 }
 .u-header {
   padding-top: 0px;
-  line-height: 2rem;
+  height: 200px;
+  overflow: hidden;
   letter-spacing: 1px;
-}
-.text-u-header1 {
-  /* display: inline; */
-  margin: 0;
 }
 .text-u-header,
 .text-u-header2 {
   text-transform: uppercase;
   font-size: 10px;
   font-family: 'Raleway';
-  display: inline-block;
   overflow: hidden;
-  white-space: nowrap;
+}
+.text-u-header1 {
+  margin: 0;
+  float: left;
 }
 .text-u-header2 {
-  height: 28px;
+  margin-top: 0;
   width: 310px;
   list-style: none;
-  padding-left: 0;
+  padding-left: 5px;
   text-align: left;
 }
 .text-u-header {
@@ -138,11 +136,15 @@ h3 {
 /* .text-u-header {
   animation: slidein 7s;
 } */
-.text-u-header2 {
+.text-u-header2 li {
   animation: slidein 7s;
 }
 .text-u-header2 {
   animation: reveal 7s;
+}
+.text-u-header2 {
+  animation: change 10s infinite;
+  animation-delay: 2s;
 }
 @keyframes showup {
   0% {
@@ -192,18 +194,79 @@ h3 {
     width: 310px;
   }
 }
-@media (min-width: 1400px) {
+@keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -16.5%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -33%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -50%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -66.5%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -83%, 0);
+  }
+}
+@media (min-width: 700px) {
+  .p-class {
+    font-size: 50px;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .main-heading {
+    padding-top: 150px;
+  }
+  .text-u-header {
+    height: 25px;
+    padding: 0 40px;
+  }
+  .text-u-header1,
+  .text-u-header2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .text-u-header2 {
+    width: 320px;
+  }
+  .text-u-header1 {
+    display: inline;
+  }
+  .u-header {
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1300px) {
   .p-class {
     font-size: 75px;
-    line-height: 6rem;
+    line-height: 5.5rem;
   }
   .text-u-header1,
   .text-u-header2 {
     font-size: 29px;
   }
+  .text-u-header {
+    height: 40px;
+    padding: 0 40px;
+  }
   .text-u-header2 {
-    height: 31px;
-    width: 442px;
+    width: 430px;
   }
   @keyframes reveal {
     0% {
@@ -215,14 +278,14 @@ h3 {
       width: 0px;
     }
     30% {
-      width: 442px;
+      width: 430px;
     }
     80% {
       opacity: 1;
     }
     100% {
       opacity: 1;
-      width: 442px;
+      width: 430px;
     }
   }
 }
