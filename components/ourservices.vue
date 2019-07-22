@@ -63,9 +63,9 @@
                   <v-card
                     slot-scope="{ hover }"
                     flat
-                    class="our-service-cards accent"
+                    class="our-service-cards secondary"
                   >
-                    <v-card-title class="index-3-c2-title white--text">
+                    <v-card-title class="index-3-c2-title accent--text">
                       digital<br />
                       media
                     </v-card-title>
@@ -75,7 +75,7 @@
                     <v-expand-transition>
                       <div
                         v-if="hover"
-                        class="d-flex transition-fast-in-fast-out tertiary v-card--reveal white--text"
+                        class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
                       >
                         <div class="hover-text">
                           <span class="upper-text"> digital media</span>
@@ -101,7 +101,7 @@
                   <v-card
                     slot-scope="{ hover }"
                     flat
-                    class="our-service-cards tertiary"
+                    class="our-service-cards secondary"
                   >
                     <v-card-title class="index-3-c3-title accent--text">
                       graphic<br />
@@ -113,7 +113,7 @@
                     <v-expand-transition>
                       <div
                         v-if="hover"
-                        class="d-flex transition-fast-in-fast-out secondary v-card--reveal white--text"
+                        class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
                       >
                         <div class="hover-text">
                           <span class="upper-text"> graphic design</span>

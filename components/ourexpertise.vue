@@ -21,9 +21,10 @@
           </v-card-title>
           <v-container class="index-4-cont2" grid-list-xl text-xs-center fluid>
             <v-layout row wrap>
-              <v-flex mx-auto xs9 sm9 md9 lg4 xl4>
+              <v-flex mx-auto xs12 sm12 md12 lg4 xl4>
                 <v-card
                   flat
+                  tile
                   data-aos-delay="100"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
@@ -42,9 +43,10 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex mx-auto xs9 sm9 md9 lg4 xl4>
+              <v-flex mx-auto xs12 sm12 md12 lg4 xl4>
                 <v-card
                   flat
+                  tile
                   data-aos-delay="100"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
@@ -63,9 +65,10 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex mx-auto xs9 sm9 md9 lg4 xl4>
+              <v-flex mx-auto xs12 sm12 md12 lg4 xl4>
                 <v-card
                   flat
+                  tile
                   data-aos-delay="100"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
@@ -117,7 +120,7 @@
 .index-4-c3-title {
   text-transform: uppercase;
   font-family: 'Raleway';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #66cc99;
   justify-content: center;
@@ -132,7 +135,7 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 @media (min-width: 700px) {
   .our-expertise {

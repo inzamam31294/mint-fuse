@@ -22,12 +22,25 @@
             <v-card class="main-heading accent" flat>
               <v-card-title class="header-text">
                 <h1 class="p-class">
-                  <p>
+                  <div class="text-1">
                     your
-                    <span style="color: whitesmoke;">partner</span>
-                    for all<br />
-                    things <span style="color: whitesmoke;">digital</span>
-                  </p>
+                  </div>
+                  <div class="text-2" style="color: whitesmoke;">
+                    partner
+                  </div>
+                  <div class="text-3">
+                    for
+                  </div>
+                  <div class="text-4">
+                    all
+                  </div>
+                  <br />
+                  <div class="text-5">
+                    things
+                  </div>
+                  <div class="text-6" style="color: whitesmoke;">
+                    digital
+                  </div>
                 </h1>
               </v-card-title>
               <v-card-text class="u-header white--text">
@@ -92,6 +105,42 @@ export default {
   line-height: 2.5rem;
   text-transform: uppercase;
 }
+.p-class div {
+  display: inline-block;
+}
+/* .p-class div {
+  opacity: 0;
+  transition-property: opacity;
+} */
+.text-1 {
+  animation: bounceInUp 2s ease;
+  opacity: 1;
+}
+.text-2 {
+  animation: bounceInUp 2s ease;
+  animation-delay: 0.1s;
+  opacity: 1;
+}
+.text-3 {
+  animation: bounceInUp 2s ease;
+  animation-delay: 0.2s;
+  opacity: 1;
+}
+.text-4 {
+  animation: bounceInUp 2s ease;
+  animation-delay: 0.3s;
+  opacity: 1;
+}
+.text-5 {
+  animation: bounceInUp 2s ease;
+  animation-delay: 0.4s;
+  opacity: 1;
+}
+.text-6 {
+  animation: bounceInUp 2s ease;
+  animation-delay: 0.5s;
+  opacity: 1;
+}
 .main-heading {
   text-align: left;
 }
@@ -102,7 +151,6 @@ h3 {
   position: absolute;
 }
 .header-text {
-  animation: fadeInUp 2s ease;
   padding-bottom: 0;
   display: block;
 }
@@ -117,10 +165,12 @@ h3 {
   text-transform: uppercase;
   font-size: 10px;
   font-family: 'Raleway';
+  display: inline-block;
   overflow: hidden;
 }
 .text-u-header1 {
-  margin: 0;
+  /* margin: 0; */
+  /* display: inline; */
   float: left;
 }
 .text-u-header2 {
@@ -133,9 +183,9 @@ h3 {
 .text-u-header {
   animation: showup 4s ease;
 }
-/* .text-u-header {
+.text-u-header li {
   animation: slidein 7s;
-} */
+}
 .text-u-header2 li {
   animation: slidein 7s;
 }
@@ -229,11 +279,11 @@ h3 {
     letter-spacing: 3px;
   }
   .main-heading {
-    padding-top: 150px;
+    padding-top: 250px;
   }
   .text-u-header {
     height: 25px;
-    padding: 0 40px;
+    /* padding: 0 40px; */
   }
   .text-u-header1,
   .text-u-header2 {
@@ -249,7 +299,7 @@ h3 {
   .u-header {
     height: 300px;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 }
 @media (min-width: 1300px) {
@@ -263,7 +313,6 @@ h3 {
   }
   .text-u-header {
     height: 40px;
-    padding: 0 40px;
   }
   .text-u-header2 {
     width: 430px;

@@ -198,8 +198,8 @@ export default {
 }
 @media (min-width: 700px) {
   .main-title-toolbar {
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 360px;
     padding: 25px 30px;
   }
 }
@@ -209,7 +209,7 @@ export default {
     padding: 0 30px;
   }
   .main-title-toolbar {
-    padding: 35px 40px;
+    padding: 35px 30px;
   }
 }
 </style>
