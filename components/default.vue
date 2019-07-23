@@ -203,7 +203,16 @@ export default {
     padding: 25px 30px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+  .btn-toolbar {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .main-title-toolbar {
+    padding: 35px 30px;
+  }
+}
+@media (min-width: 1300px) {
   .btn-toolbar {
     font-size: 25px;
     padding: 0 30px;

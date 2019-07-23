@@ -35,9 +35,9 @@
               what we<span style="font-weight: bold;"> do</span>
             </h1>
           </v-card-title>
-          <v-container class="index-5-cont2" text-xs-center fluid>
-            <v-layout row wrap>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+          <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
+            <v-layout justify-space-around ma-5 row wrap>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -45,7 +45,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-right"
                   >
-                    <v-card-title class="index-5-c1-title">
+                    <v-card-title class="index-5-c1-title1">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FL1A70YTH/final_layout-14.png"
@@ -56,15 +56,20 @@
                       <span style="color: #66cc99;"> &nbsp;design</span>
                     </v-card-title>
                     <v-card-text class="index-5-c1-text">
-                      Our &nbsp;fresh design &nbsp;concepts<br />
-                      give an amazing user expe- <br />rience &nbsp;which
-                      &nbsp;translates &nbsp;to<br />
-                      return &nbsp;customers & &nbsp;gener- <br />ate business.
+                      <div>
+                        <p>
+                          Our &nbsp;fresh &nbsp;design concepts<br />
+                          give an amazing user expe-<br />rience
+                          &nbsp;which&nbsp; translates &nbsp;to<br />
+                          return &nbsp;customers & &nbsp;gener-<br />ate
+                          business.
+                        </p>
+                      </div>
                     </v-card-text>
                   </div>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -72,7 +77,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-up"
                   >
-                    <v-card-title class="index-5-c2-title">
+                    <v-card-title class="index-5-c2-title2">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FKN2DDKAN/final_layout-11.png"
@@ -94,7 +99,7 @@
                   </div>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -102,7 +107,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-left"
                   >
-                    <v-card-title class="index-5-c3-title">
+                    <v-card-title class="index-5-c3-title3">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FKZ0Q06EQ/final_layout-16.png"
@@ -126,9 +131,9 @@
               </v-flex>
             </v-layout>
           </v-container>
-          <v-container class="index-5-cont2" text-xs-center fluid>
-            <v-layout row wrap>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+          <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
+            <v-layout justify-space-around ma-5 row wrap>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -136,7 +141,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-right"
                   >
-                    <v-card-title class="index-5-c1-title">
+                    <v-card-title class="index-5-c1-title4">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FL1JU6A2J/final_layout-10.png"
@@ -157,7 +162,7 @@
                   </div>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -165,7 +170,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-up"
                   >
-                    <v-card-title class="index-5-c2-title">
+                    <v-card-title class="index-5-c2-title5">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FKN2DDKBL/final_layout-12.png"
@@ -185,7 +190,7 @@
                   </div>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -193,7 +198,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-left"
                   >
-                    <v-card-title class="index-5-c3-title">
+                    <v-card-title class="index-5-c3-title6">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FKZEW3Z29/final_layout-17.png"
@@ -214,9 +219,9 @@
               </v-flex>
             </v-layout>
           </v-container>
-          <v-container class="index-5-cont2" text-xs-center fluid>
-            <v-layout row wrap>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+          <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
+            <v-layout justify-space-around ma-5 row wrap>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -224,7 +229,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-right"
                   >
-                    <v-card-title class="index-5-c1-title">
+                    <v-card-title class="index-5-c1-title7">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FKZEW3XEH/final_layout-13.png"
@@ -242,7 +247,7 @@
                   </div>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat tile>
                   <div
                     data-aos-delay="100"
@@ -250,7 +255,7 @@
                     data-aos-easing="ease"
                     data-aos="fade-up"
                   >
-                    <v-card-title class="index-5-c2-title">
+                    <v-card-title class="index-5-c2-title8">
                       <div class="icon-class">
                         <v-img
                           src="https://files.slack.com/files-pri/T3UCG9LPL-FKN2TMM43/final_layout-15.png"
@@ -269,7 +274,7 @@
                   </div>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs12 sm12 md12 lg4 xl4>
+              <v-flex d-flex xs10 sm7 md6 lg2 xl2>
                 <v-card class="index-5-card accent" flat height="50px">
                 </v-card>
               </v-flex>
@@ -283,7 +288,6 @@
 
 <style scoped>
 .index-5-cont {
-  padding: 0;
   padding-top: 100px;
   /* padding-bottom: 100px; */
 }
@@ -309,9 +313,14 @@
   height: 200px;
   width: 200px;
 }
-.index-5-c1-title,
-.index-5-c2-title,
-.index-5-c3-title {
+.index-5-c1-title1,
+.index-5-c2-title2,
+.index-5-c3-title3,
+.index-5-c1-title4,
+.index-5-c2-title5,
+.index-5-c3-title6,
+.index-5-c1-title7,
+.index-5-c2-title8 {
   text-transform: uppercase;
   font-family: 'Raleway';
   justify-content: center;
@@ -322,6 +331,38 @@
   letter-spacing: 1px;
   flex-wrap: nowrap;
   padding: 0;
+}
+.index-5-c1-title1 {
+  /* margin-right: 60px; */
+  /* margin-left: 50px; */
+}
+.index-5-c2-title2 {
+  /* margin-right: 20px; */
+  /* margin-left: -52px; */
+}
+.index-5-c3-title3 {
+  /* margin-right: 20px; */
+  /* margin-left: -55px; */
+}
+.index-5-c1-title4 {
+  /* margin-right: 40px; */
+  /* margin-left: -52px; */
+}
+.index-5-c2-title5 {
+  /* margin-right: 80px;
+  margin-left: -50px; */
+}
+.index-5-c3-title6 {
+  /* margin-right: 70px;
+  margin-left: -52px; */
+}
+.index-5-c1-title7 {
+  /* margin-right: 40px;s */
+  /* margin-left: -50px; */
+}
+.index-5-c2-title8 {
+  /* margin-right: 40px; */
+  /* margin-left: -52px; */
 }
 .icon-class {
   height: 30px;
@@ -338,18 +379,6 @@
   letter-spacing: 1px;
   color: whitesmoke;
 }
-/* .index-5-c1-text {
-  padding-left: 190px;
-  padding-right: 100px;
-}
-.index-5-c2-text {
-  padding-left: 170px;
-  padding-right: 100px;
-}
-.index-5-c3-text {
-  padding-left: 170px;
-  padding-right: 100px;
-} */
 @media (min-width: 700px) {
   .what-we-do {
     font-size: 50px;
@@ -364,9 +393,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  .index-5-c1-title,
-  .index-5-c2-title,
-  .index-5-c3-title {
+  .index-5-c1-title1,
+  .index-5-c2-title2,
+  .index-5-c3-title3,
+  .index-5-c1-title4,
+  .index-5-c2-title5,
+  .index-5-c3-title6,
+  .index-5-c1-title7,
+  .index-5-c2-title8 {
     font-size: 24px;
   }
   .icon-class {
@@ -379,8 +413,7 @@
     font-size: 19px;
   }
   .index-5-card {
-    height: 320px;
-    width: 200px;
+    height: 230px;
   }
 }
 @media (min-width: 1000px) {
@@ -388,10 +421,64 @@
     font-size: 75px;
     letter-spacing: 4px;
   }
+  .icon-class {
+    height: 60px;
+    width: 60px;
+  }
+  .index-5-card {
+    width: 350px;
+    height: 250px;
+  }
+  .index-5-c1-title1,
+  .index-5-c2-title2,
+  .index-5-c3-title3,
+  .index-5-c1-title4,
+  .index-5-c2-title5,
+  .index-5-c3-title6,
+  .index-5-c1-title7,
+  .index-5-c2-title8 {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 @media (min-width: 1100px) {
   .index-5-cont {
     padding-bottom: 200px;
+  }
+  .index-5-card {
+    height: 180px;
+  }
+  .index-5-c1-title1 {
+    margin-right: 130px;
+    margin-left: -50px;
+  }
+  .index-5-c2-title2 {
+    margin-right: 110px;
+    margin-left: -52px;
+  }
+  .index-5-c3-title3 {
+    margin-right: 100px;
+    margin-left: -55px;
+  }
+  .index-5-c1-title4 {
+    margin-right: 75px;
+    margin-left: -52px;
+  }
+  .index-5-c2-title5 {
+    margin-right: 80px;
+    margin-left: -50px;
+  }
+  .index-5-c3-title6 {
+    margin-right: 70px;
+    margin-left: -52px;
+  }
+  .index-5-c1-title7 {
+    margin-right: 130px;
+    margin-left: -50px;
+  }
+  .index-5-c2-title8 {
+    margin-right: 130px;
+    margin-left: -52px;
   }
 }
 </style>

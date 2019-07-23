@@ -3,18 +3,25 @@
     <v-container class="index-6-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-6-heading" flat>
-          <v-card-title
-            data-aos-duration="2000"
-            data-aos-easing="ease"
-            data-aos="fade-right"
-            class="index-6-headertext"
-          >
-            <v-img
-              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
-              contain
-              class="arrow-class"
-            />
-            <h1 class="why-choose-us accent--text">
+          <v-card-title class="index-6-headertext">
+            <div
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+            >
+              <v-img
+                src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+                contain
+                class="arrow-class"
+              />
+            </div>
+            <h1
+              class="why-choose-us accent--text"
+              data-aos-delay="500"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+            >
               why<span style="font-weight: bold;"> choose us</span>
             </h1>
           </v-card-title>

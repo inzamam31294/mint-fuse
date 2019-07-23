@@ -3,25 +3,31 @@
     <v-container class="index-4-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-4-heading" flat>
-          <v-card-title
-            data-aos-duration="2000"
-            data-aos-easing="ease"
-            data-aos="fade-right"
-            class="index-4-headertext"
-            d-inline-flex
-          >
-            <v-img
-              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
-              contain
-              class="arrow-class"
-            />
-            <h1 class="our-expertise accent--text">
+          <v-card-title class="index-4-headertext">
+            <div
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+            >
+              <v-img
+                src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+                contain
+                class="arrow-class"
+              />
+            </div>
+            <h1
+              class="our-expertise accent--text"
+              data-aos-delay="500"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+            >
               our<span style="font-weight: bold;"> expertise</span>
             </h1>
           </v-card-title>
           <v-container class="index-4-cont2" grid-list-xl text-xs-center fluid>
-            <v-layout row wrap>
-              <v-flex mx-auto xs12 sm12 md12 lg4 xl4>
+            <v-layout ma-3 justify-space-around row wrap>
+              <v-flex xs10 sm10 md12 lg4 xl4>
                 <v-card
                   flat
                   tile
@@ -43,7 +49,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex mx-auto xs12 sm12 md12 lg4 xl4>
+              <v-flex xs10 sm10 md12 lg4 xl4>
                 <v-card
                   flat
                   tile
@@ -65,7 +71,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex mx-auto xs12 sm12 md12 lg4 xl4>
+              <v-flex xs10 sm10 md12 lg4 xl4>
                 <v-card
                   flat
                   tile

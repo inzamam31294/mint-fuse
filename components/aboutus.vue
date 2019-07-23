@@ -3,19 +3,25 @@
     <v-container class="index-2-cont primary" text-xs-center fluid>
       <v-flex xs12>
         <v-card class="index-2-heading" flat>
-          <v-card-title
-            data-aos-delay="100"
-            data-aos-duration="2000"
-            data-aos-easing="ease"
-            data-aos="fade-right"
-            class="index-2-headertext"
-          >
-            <v-img
-              src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
-              contain
-              class="arrow-class"
-            />
-            <h1 class="about-us accent--text">
+          <v-card-title class="index-2-headertext">
+            <div
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+            >
+              <v-img
+                src="https://files.slack.com/files-pri/T3UCG9LPL-FL6S5MBK4/final_details-07.png"
+                contain
+                class="arrow-class"
+              />
+            </div>
+            <h1
+              class="about-us accent--text"
+              data-aos-delay="500"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
+              data-aos="fade-right"
+            >
               about<span style="font-weight: bold;"> us</span>
             </h1>
           </v-card-title>
@@ -56,7 +62,7 @@
 }
 .arrow-class {
   height: 50px;
-  width: 40px;
+  width: 50px;
 }
 .index-2-uheader {
   text-align: center;
@@ -64,7 +70,6 @@
   font-size: 12px;
   font-family: 'Raleway';
 }
-
 @media (min-width: 700px) {
   .about-us {
     font-size: 50px;

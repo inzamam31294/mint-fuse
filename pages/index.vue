@@ -25,7 +25,7 @@
                   <div class="text-1">
                     your
                   </div>
-                  <div class="text-2" style="color: whitesmoke;">
+                  <div class="text-2 primary--text">
                     partner
                   </div>
                   <div class="text-3">
@@ -38,7 +38,7 @@
                   <div class="text-5">
                     things
                   </div>
-                  <div class="text-6" style="color: whitesmoke;">
+                  <div class="text-6 primary--text">
                     digital
                   </div>
                 </h1>
@@ -46,7 +46,6 @@
               <v-card-text class="u-header white--text">
                 <div class="text-u-header">
                   <p class="text-u-header1">we are an enthusiastic team of</p>
-
                   <ul
                     class="text-u-header2 secondary--text"
                     style="font-weight: 800;"
@@ -105,41 +104,45 @@ export default {
   line-height: 2.5rem;
   text-transform: uppercase;
 }
+.header-text {
+  animation: showfirst ease;
+  animation-duration: 2s;
+}
 .p-class div {
   display: inline-block;
 }
-/* .p-class div {
-  opacity: 0;
-  transition-property: opacity;
-} */
 .text-1 {
-  animation: bounceInUp 2s ease;
-  opacity: 1;
+  animation: fadeInUpBig 2s ease;
 }
 .text-2 {
-  animation: bounceInUp 2s ease;
+  animation: fadeInUpBig 2s ease;
   animation-delay: 0.1s;
-  opacity: 1;
 }
 .text-3 {
-  animation: bounceInUp 2s ease;
+  animation: fadeInUpBig 2s ease;
   animation-delay: 0.2s;
-  opacity: 1;
 }
 .text-4 {
-  animation: bounceInUp 2s ease;
+  animation: fadeInUpBig 2s ease;
   animation-delay: 0.3s;
-  opacity: 1;
 }
 .text-5 {
-  animation: bounceInUp 2s ease;
+  animation: fadeInUpBig 2s ease;
   animation-delay: 0.4s;
-  opacity: 1;
 }
 .text-6 {
-  animation: bounceInUp 2s ease;
+  animation: fadeInUpBig 2s ease;
   animation-delay: 0.5s;
-  opacity: 1;
+}
+@keyframes showfirst {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  30.1%,
+  100% {
+    opacity: 1;
+  }
 }
 .main-heading {
   text-align: left;
@@ -156,7 +159,7 @@ h3 {
 }
 .u-header {
   padding-top: 0px;
-  height: 200px;
+  height: 15px;
   overflow: hidden;
   letter-spacing: 1px;
 }
@@ -169,13 +172,12 @@ h3 {
   overflow: hidden;
 }
 .text-u-header1 {
-  /* margin: 0; */
-  /* display: inline; */
   float: left;
 }
 .text-u-header2 {
   margin-top: 0;
   width: 310px;
+  /* height: 40px; */
   list-style: none;
   padding-left: 5px;
   text-align: left;
