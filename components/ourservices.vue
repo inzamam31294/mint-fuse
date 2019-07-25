@@ -38,7 +38,7 @@
                       web & app<br />
                       development
                     </v-card-title>
-                    <v-card-text class="index-3-c-text"
+                    <v-card-text class="index-3-c-text accent--text"
                       >Software Solutions For Needs</v-card-text
                     >
                     <v-expand-transition>
@@ -70,9 +70,9 @@
                   <v-card
                     slot-scope="{ hover }"
                     flat
-                    class="our-service-cards secondary"
+                    class="our-service-cards accent"
                   >
-                    <v-card-title class="index-3-c2-title accent--text">
+                    <v-card-title class="index-3-c2-title primary--text">
                       digital<br />
                       media
                     </v-card-title>
@@ -82,7 +82,7 @@
                     <v-expand-transition>
                       <div
                         v-if="hover"
-                        class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
+                        class="d-flex transition-fast-in-fast-out tertiary v-card--reveal accent--text"
                       >
                         <div class="hover-text">
                           <span class="upper-text"> digital media</span>
@@ -108,19 +108,19 @@
                   <v-card
                     slot-scope="{ hover }"
                     flat
-                    class="our-service-cards secondary"
+                    class="our-service-cards tertiary"
                   >
                     <v-card-title class="index-3-c3-title accent--text">
                       graphic<br />
                       design
                     </v-card-title>
-                    <v-card-text class="index-3-c-text"
+                    <v-card-text class="index-3-c-text accent--text"
                       >Creative Material For Branding</v-card-text
                     >
                     <v-expand-transition>
                       <div
                         v-if="hover"
-                        class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
+                        class="d-flex transition-fast-in-fast-out secondary v-card--reveal white--text"
                       >
                         <div class="hover-text">
                           <span class="upper-text"> graphic design</span>
@@ -247,8 +247,7 @@
     font-size: 19px;
   }
   .index-3-cont {
-    padding: 0;
-    padding-top: 200px;
+    padding-top: 300px;
     padding-bottom: 200px;
   }
 }

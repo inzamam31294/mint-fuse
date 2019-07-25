@@ -83,7 +83,6 @@
     width: 80px;
   }
   .index-2-cont {
-    padding: 0;
     padding-top: 300px;
     padding-bottom: 200px;
   }

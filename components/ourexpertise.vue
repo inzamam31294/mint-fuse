@@ -27,7 +27,7 @@
           </v-card-title>
           <v-container class="index-4-cont2" grid-list-xl text-xs-center fluid>
             <v-layout ma-3 justify-space-around row wrap>
-              <v-flex xs10 sm10 md12 lg4 xl4>
+              <v-flex xs10 sm10 md10 lg4 xl4>
                 <v-card
                   flat
                   tile
@@ -49,7 +49,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs10 sm10 md12 lg4 xl4>
+              <v-flex xs10 sm10 md10 lg4 xl4>
                 <v-card
                   flat
                   tile
@@ -71,7 +71,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs10 sm10 md12 lg4 xl4>
+              <v-flex xs10 sm10 md10 lg4 xl4>
                 <v-card
                   flat
                   tile
@@ -80,7 +80,7 @@
                   data-aos-easing="ease"
                   data-aos="fade-left"
                 >
-                  <v-card-title class="index-4-c2-title">
+                  <v-card-title class="index-4-c3-title">
                     machine
                     <span style="color: #404a60;"> &nbsp;learning</span>
                   </v-card-title>

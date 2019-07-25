@@ -1,343 +1,270 @@
 <template>
-  <v-app>
-    <v-layout wrap class="accent">
-      <Layout />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700,800,900"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <script src="https://unpkg.com/aos@next/dist/aos.js" />
-      <script>
-        AOS.init()
-      </script>
-      <v-container>
-        <v-layout>
-          <v-flex xl12>
-            <v-card class="main-heading accent" flat>
-              <v-card-title class="header-text">
-                <h1 class="p-class">
-                  <div class="text-1">
-                    your
-                  </div>
-                  <div class="text-2 primary--text">
-                    partner
-                  </div>
-                  <div class="text-3">
-                    for
-                  </div>
-                  <div class="text-4">
-                    all
-                  </div>
-                  <br />
-                  <div class="text-5">
-                    things
-                  </div>
-                  <div class="text-6 primary--text">
-                    digital
-                  </div>
-                </h1>
-              </v-card-title>
-              <v-card-text class="u-header white--text">
-                <div class="text-u-header">
-                  <p class="text-u-header1">we are an enthusiastic team of</p>
-                  <ul
-                    class="text-u-header2 secondary--text"
-                    style="font-weight: 800;"
-                  >
-                    <li class="flip-text1">software developers</li>
-                    <li class="flip-text2">web developers</li>
-                    <li class="flip-text3">programmers</li>
-                    <li class="flip-text4">content writers</li>
-                    <li class="flip-text5">social media marketing</li>
-                    <li class="flip-text6">creative people</li>
-                  </ul>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-layout>
-    <AboutUs />
-    <OurServices />
-    <OurExpertise />
-    <WhatWeDo />
-    <WhyChooseUs />
+  <v-app id="app">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Raleway:400,500,600"
+    />
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue2-smooth-scroll"></script>
+    <!-- <v-navigation-drawer
+      v-model="drawer"
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      fixed
+      app
+    >
+      <v-list>
+        <v-list-tile
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          router
+          exact
+        >
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title v-text="item.title" />
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer> -->
+    <v-toolbar prominent height="auto" flat app class="main-toolbar accent">
+      <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
+      <v-btn icon @click.stop="miniVariant = !miniVariant">
+        <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
+      </v-btn>
+      <v-btn icon @click.stop="clipped = !clipped">
+        <v-icon>web</v-icon>
+      </v-btn>
+      <v-btn icon @click.stop="fixed = !fixed">
+        <v-icon>remove</v-icon>
+      </v-btn> -->
+      <v-toolbar-title class="main-title-toolbar">
+        <a href="/">
+          <v-img
+            src="https://files.slack.com/files-pri/T3UCG9LPL-FKPS739B2/logo-01.png"
+            contain
+          />
+        </a>
+      </v-toolbar-title>
+      <v-spacer />
+      <v-toolbar-items class="toolbar-items hidden-md-and-down">
+        <v-btn
+          v-for="item in items"
+          :key="item.icon"
+          class="btn-toolbar text-lowercase"
+          :href="item.route"
+          flat
+          depressed
+          >{{ item.title }}</v-btn
+        >
+        <!-- <v-container>
+          <a class="btn-toolbar" to="#" dark flat>home</a>
+          <a class="btn-toolbar" to="#" dark flat>what we do</a>
+          <a class="btn-toolbar" to="#" dark flat>services</a>
+          <a class="btn-toolbar" to="#" dark flat>about us</a>
+          <a class="btn-toolbar" to="#" dark flat>contact</a>
+          <v-btn
+            class="toolbar-nav"
+            icon
+            dark
+            large
+            @click.stop="rightDrawer = !rightDrawer"
+          >
+            <v-icon x-large>menu</v-icon>
+          </v-btn>
+        </v-container> -->
+      </v-toolbar-items>
+      <v-menu class="hidden-lg-and-up">
+        <v-toolbar-side-icon
+          slot="activator"
+          class="white--text text-lowercase"
+        ></v-toolbar-side-icon>
+        <v-list>
+          <v-list-tile
+            v-for="(item, i) in items"
+            :key="i"
+            :href="item.route"
+            router
+            exact
+          >
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="item.title" />
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+    <v-content>
+      <index />
+      <AboutUs id="aboutus" />
+      <OurServices id="ourservices" />
+      <OurExpertise id="ourexpertise" />
+      <WhatWeDo id="whatwedo" />
+      <WhyChooseUs id="whychooseus" />
+      <gpresense id="gpresense" />
+      <customerreview id="customerreview" />
+      <contactus id="contactus" />
+      <Footer />
+    </v-content>
+    <!-- <v-navigation-drawer
+      v-model="rightDrawer".index-7-cont {
+    height: 500px;
+  }
+      :right="right"
+      :clipped="clipped"
+      :mini-variant="miniVariant"
+      fixed
+      app
+    >
+      <v-list>
+        <v-list-tile @click.native="right = !right">
+          <v-list-tile-action>
+            <v-icon light>compare_arrows</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer> -->
+    <!-- <v-footer dark padless>
+      <v-card class="footer-card primary accent--text text-center" flat tile>
+        <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-3 secondary white--text"
+            fab
+            icon
+          >
+            <v-icon large>{{ icon }}</v-icon>
+          </v-btn>
+        </v-card-text>
+        <v-card-text>
+          Designed and developed with love by mint fuse.
+        </v-card-text>
+      </v-card>
+    </v-footer> -->
   </v-app>
 </template>
 
 <script>
-import Layout from '~/components/default.vue'
+import index from '~/components/index.vue'
 import AboutUs from '~/components/aboutus.vue'
 import OurServices from '~/components/ourservices.vue'
 import OurExpertise from '~/components/ourexpertise.vue'
 import WhatWeDo from '~/components/whatwedo.vue'
 import WhyChooseUs from '~/components/whychooseus.vue'
-// import Footer from '~/components/footer.vue'
+import gpresense from '~/components/Gpresense.vue'
+import customerreview from '~/components/customerreview.vue'
+import contactus from '~/components/contactus.vue'
+import Footer from '~/components/footer.vue'
 export default {
-  name: 'App',
   components: {
-    Layout,
+    index,
     AboutUs,
     OurServices,
     OurExpertise,
     WhatWeDo,
-    WhyChooseUs
+    WhyChooseUs,
+    gpresense,
+    customerreview,
+    contactus,
+    Footer
+  },
+  data() {
+    return {
+      clipped: false,
+      drawer: false,
+      fixed: false,
+      items: [
+        {
+          icon: 'home',
+          title: 'home',
+          route: '/'
+        },
+        {
+          icon: 'apps',
+          title: 'what we do',
+          route: '#whatwedo'
+        },
+        {
+          icon: 'home',
+          title: 'services',
+          route: '#ourservices'
+        },
+        {
+          icon: 'info',
+          title: 'about us',
+          route: '#aboutus'
+        },
+        {
+          icon: 'home',
+          title: 'contact',
+          route: '#contactus'
+        }
+      ],
+      miniVariant: false,
+      right: true,
+      rightDrawer: false
+    }
+  },
+  methods: {
+    menuItems() {
+      return this.items
+    }
   }
 }
 </script>
 
 <style scoped>
-.p-class {
-  font-size: 30px;
-  text-align: left;
+/* .main-toolbar {
+  background-color: rgba(255, 255, 255, 0);
+} */
+.main-title-toolbar {
+  height: 80px;
+  width: 180px;
+  padding: 15px 15px;
+}
+.toolbar-items {
+  padding: 0 30px;
+}
+.btn-toolbar {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  color: #66cc99;
-  letter-spacing: 1px;
-  line-height: 2.5rem;
-  text-transform: uppercase;
-}
-.header-text {
-  animation: showfirst ease;
-  animation-duration: 2s;
-}
-.p-class div {
-  display: inline-block;
-}
-.text-1 {
-  animation: fadeInUpBig 2s ease;
-}
-.text-2 {
-  animation: fadeInUpBig 2s ease;
-  animation-delay: 0.1s;
-}
-.text-3 {
-  animation: fadeInUpBig 2s ease;
-  animation-delay: 0.2s;
-}
-.text-4 {
-  animation: fadeInUpBig 2s ease;
-  animation-delay: 0.3s;
-}
-.text-5 {
-  animation: fadeInUpBig 2s ease;
-  animation-delay: 0.4s;
-}
-.text-6 {
-  animation: fadeInUpBig 2s ease;
-  animation-delay: 0.5s;
-}
-@keyframes showfirst {
-  0%,
-  30% {
-    opacity: 0;
-  }
-  30.1%,
-  100% {
-    opacity: 1;
-  }
-}
-.main-heading {
-  text-align: left;
-}
-h2 {
-  position: absolute;
-}
-h3 {
-  position: absolute;
-}
-.header-text {
-  padding-bottom: 0;
-  display: block;
-}
-.u-header {
-  padding-top: 0px;
-  height: 15px;
-  overflow: hidden;
-  letter-spacing: 1px;
-}
-.text-u-header,
-.text-u-header2 {
-  text-transform: uppercase;
-  font-size: 10px;
-  font-family: 'Raleway';
-  display: inline-block;
-  overflow: hidden;
-}
-.text-u-header1 {
-  float: left;
-}
-.text-u-header2 {
-  margin-top: 0;
-  width: 310px;
-  /* height: 40px; */
-  list-style: none;
-  padding-left: 5px;
-  text-align: left;
-}
-.text-u-header {
-  animation: showup 4s ease;
-}
-.text-u-header li {
-  animation: slidein 7s;
-}
-.text-u-header2 li {
-  animation: slidein 7s;
-}
-.text-u-header2 {
-  animation: reveal 7s;
-}
-.text-u-header2 {
-  animation: change 10s infinite;
-  animation-delay: 2s;
-}
-@keyframes showup {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes slidein {
-  0% {
-    margin-left: -800px;
-  }
-  20% {
-    margin-left: -800px;
-  }
-  35% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    width: 0px;
-  }
-  20% {
-    opacity: 1;
-    width: 0px;
-  }
-  30% {
-    width: 310px;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    width: 310px;
-  }
-}
-@keyframes change {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -16.5%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -33%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -50%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -66.5%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -83%, 0);
-  }
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0 20px;
 }
 @media (min-width: 700px) {
-  .p-class {
-    font-size: 50px;
-    line-height: 4rem;
-    text-align: center;
-    letter-spacing: 3px;
+  .main-title-toolbar {
+    height: 180px;
+    width: 360px;
+    padding: 25px 30px;
   }
-  .main-heading {
-    padding-top: 250px;
-  }
-  .text-u-header {
-    height: 25px;
-    /* padding: 0 40px; */
-  }
-  .text-u-header1,
-  .text-u-header2 {
+}
+@media (min-width: 1000px) {
+  .btn-toolbar {
     font-size: 20px;
-    letter-spacing: 2px;
+    padding: 0 20px;
   }
-  .text-u-header2 {
-    width: 320px;
-  }
-  .text-u-header1 {
-    display: inline;
-  }
-  .u-header {
-    height: 300px;
-    text-align: center;
-    /* overflow: hidden; */
+  .main-title-toolbar {
+    padding: 35px 30px;
   }
 }
 @media (min-width: 1300px) {
-  .p-class {
-    font-size: 75px;
-    line-height: 5.5rem;
+  .btn-toolbar {
+    font-size: 25px;
+    padding: 0 30px;
   }
-  .text-u-header1,
-  .text-u-header2 {
-    font-size: 29px;
-  }
-  .text-u-header {
-    height: 40px;
-  }
-  .text-u-header2 {
-    width: 430px;
-  }
-  @keyframes reveal {
-    0% {
-      opacity: 0;
-      width: 0px;
-    }
-    20% {
-      opacity: 1;
-      width: 0px;
-    }
-    30% {
-      width: 430px;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-      width: 430px;
-    }
+  .main-title-toolbar {
+    padding: 35px 30px;
   }
 }
 </style>

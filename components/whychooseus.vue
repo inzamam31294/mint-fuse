@@ -74,7 +74,6 @@
   width: 40px;
 }
 .index-6-uheader {
-  text-align: center;
   padding-top: 0;
   font-size: 12px;
   font-family: 'Raleway';
