@@ -31,10 +31,10 @@
                 <v-card
                   flat
                   tile
-                  data-aos-delay="100"
+                  data-aos-delay="0"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                 >
                   <v-card-title class="index-4-c1-title">
                     web
@@ -53,7 +53,7 @@
                 <v-card
                   flat
                   tile
-                  data-aos-delay="100"
+                  data-aos-delay="250"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-up"
@@ -75,10 +75,10 @@
                 <v-card
                   flat
                   tile
-                  data-aos-delay="100"
+                  data-aos-delay="500"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                 >
                   <v-card-title class="index-4-c3-title">
                     machine

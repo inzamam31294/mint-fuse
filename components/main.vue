@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <v-layout wrap class="accent">
-      <Layout />
+    <v-layout app accent>
       <link
         rel="stylesheet"
         type="text/css"
@@ -16,7 +15,7 @@
       <script>
         AOS.init()
       </script>
-      <v-container>
+      <v-container fluid>
         <v-layout>
           <v-flex xl12>
             <v-card class="main-heading accent" flat>
@@ -64,39 +63,11 @@
         </v-layout>
       </v-container>
     </v-layout>
-    <!-- <AboutUs />
-    <OurServices />
-    <OurExpertise />
-    <WhatWeDo />
-    <WhyChooseUs />
-    <gpresense />
-    <customerreview /> -->
   </v-app>
 </template>
 
 <script>
-// import Layout from '~/components/default.vue'
-// import AboutUs from '~/components/aboutus.vue'
-// import OurServices from '~/components/ourservices.vue'
-// import OurExpertise from '~/components/ourexpertise.vue'
-// import WhatWeDo from '~/components/whatwedo.vue'
-// import WhyChooseUs from '~/components/whychooseus.vue'
-// import gpresense from '~/components/Gpresense.vue'
-// import customerreview from '~/components/customerreview.vue'
-// import Footer from '~/components/footer.vue'
-export default {
-  name: 'App',
-  components: {
-    // Layout,
-    // AboutUs,
-    // OurServices,
-    // OurExpertise,
-    // WhatWeDo,
-    // WhyChooseUs,
-    // gpresense,
-    // customerreview
-  }
-}
+export default {}
 </script>
 
 <style scoped>
@@ -176,8 +147,10 @@ h3 {
   font-family: 'Raleway';
   display: inline-block;
   overflow: hidden;
+  white-space: nowrap;
 }
 .text-u-header1 {
+  /* margin: 0; */
   float: left;
 }
 .text-u-header2 {
@@ -187,22 +160,24 @@ h3 {
   list-style: none;
   padding-left: 5px;
   text-align: left;
+  overflow: hidden;
 }
-.text-u-header {
-  animation: showup 4s ease;
+.text-u-header1 {
+  animation: showup 10s ease;
 }
-.text-u-header li {
-  animation: slidein 7s;
-}
+/* .text-u-header {
+  animation: slidein 13s;
+} */
 .text-u-header2 li {
-  animation: slidein 7s;
+  animation: slidein 13s;
 }
 .text-u-header2 {
-  animation: reveal 7s;
+  width: 0px;
+  animation: reveal 13s ease;
 }
 .text-u-header2 {
   animation: change 10s infinite;
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
 @keyframes showup {
   0% {
@@ -288,9 +263,7 @@ h3 {
     padding-bottom: 20px;
   }
   .main-heading {
-    padding-top: 250px;
-  }
-  .header-text {
+    /* padding-top: 250px; */
   }
   .text-u-header {
     height: 25px;

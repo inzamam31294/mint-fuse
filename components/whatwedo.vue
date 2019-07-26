@@ -107,7 +107,7 @@
                   data-aos-delay="100"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                 >
                   <v-card-title class="index-5-c3-title3">
                     <div class="icon-class">
@@ -197,7 +197,7 @@
                   data-aos-delay="100"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                 >
                   <v-card-title class="index-5-c3-title6">
                     <div class="icon-class">
@@ -278,9 +278,8 @@
                 </v-card>
               </v-flex>
               <v-flex d-flex xs10 sm7 md6 lg2 xl2>
-                <v-card class="index-5-card accent" flat height="50px">
-                </v-card>
-              </v-flex>
+                <v-card class="index-5-card accent" flat height="50px"> </v-card
+              ></v-flex>
             </v-layout>
           </v-container>
         </v-card>
@@ -295,7 +294,7 @@
   /* padding-bottom: 100px; */
 }
 .index-5-cont2 {
-  padding: 0;
+  /* padding: 0; */
 }
 .index-5-headertext {
   display: inline-flex;

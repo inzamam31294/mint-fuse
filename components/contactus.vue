@@ -92,6 +92,94 @@
               </v-layout>
             </v-container>
           </v-form>
+          <v-container grid-list-xl text-xs-center justify-center pt-5>
+            <v-layout justify-space-around row wrap>
+              <v-flex xs12 sm4 lg3>
+                <v-card class="index-9-card accent" flat tile>
+                  <v-img
+                    src="https://files.slack.com/files-pri/T3UCG9LPL-FLSS91WER/final_details-21.png"
+                    contain
+                    class="icon-image"
+                  />
+                  <v-card-title
+                    class="card-title-style text-uppercase primary--text font-weight-medium"
+                    >address</v-card-title
+                  >
+                  <v-card-text class="card-text-style primary--text">
+                    <p
+                      style="font-size:13px; text-align:left; margin-bottom: 10px;"
+                    >
+                      108 Sector G 1st Floor, DHA Phase 1
+                      <strong style="font-size:17px; ">Lahore</strong>
+                    </p>
+                    <p
+                      style="font-size:13px; text-align:left; margin-bottom: 10px;"
+                    >
+                      Suite 407 Burlington Tower, Business Bay
+                      <strong style="font-size:17px;">Dubai</strong>
+                    </p>
+                    <p
+                      style="font-size:13px; text-align:left; margin-bottom: 10px;"
+                    >
+                      Suite 434 The Linen Hall 162-168 Regent Street,
+                      <strong style="font-size:17px;">London</strong>
+                    </p>
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm4 lg3>
+                <v-card class="index-9-card accent" flat tile>
+                  <v-img
+                    src="https://files.slack.com/files-pri/T3UCG9LPL-FLLFS3ERF/final_details-22.png"
+                    contain
+                    class="icon-image"
+                  />
+                  <v-card-title
+                    class="card-title-style text-uppercase primary--text font-weight-medium"
+                    >phone</v-card-title
+                  >
+                  <v-card-text class="card-text-style primary--text">
+                    <p style="margin-bottom: 27px;">+92 321 9988588</p>
+                    <p style="margin-bottom: 27px;">+971 (0) 528449050</p>
+                    <p style="margin-bottom: 27px;">+44 (0) 7584092952</p>
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm4 lg3>
+                <v-card class="index-9-card accent" flat tile>
+                  <v-img
+                    src="https://files.slack.com/files-pri/T3UCG9LPL-FLUMJGDPZ/final_details-23.png"
+                    contain
+                    class="icon-image"
+                  />
+                  <v-card-title
+                    class="card-title-style text-uppercase primary--text font-weight-medium"
+                    >contact</v-card-title
+                  >
+                  <v-card-text class="card-text-style primary--text"
+                    ><p>hello@mintfuse.io</p>
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm4 lg3>
+                <v-card class="index-9-card accent" flat tile>
+                  <v-img
+                    src="https://files.slack.com/files-pri/T3UCG9LPL-FLSRNB796/final_details-24.png"
+                    contain
+                    class="icon-image"
+                  />
+                  <v-card-title
+                    class="card-title-style text-uppercase primary--text font-weight-medium"
+                    >working hours</v-card-title
+                  >
+                  <v-card-text class="card-text-style primary--text"
+                    ><p style="margin-bottom: 27px;">Mon-fri : 9:00 – 18:00</p>
+                    <p style="margin-bottom: 27px;">Sat-sun : Closed</p>
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
     </v-container>
@@ -146,42 +234,21 @@ export default {
   font-family: 'Raleway';
   font-weight: 500;
 }
-.index-9-card {
-  height: 200px;
-}
-.index-9-c1-title1,
-.index-9-c2-title2,
-.index-9-c3-title3,
-.index-9-c1-title4,
-.index-9-c2-title5,
-.index-9-c3-title6,
-.index-9-c1-title7,
-.index-9-c2-title8 {
-  text-transform: uppercase;
-  font-family: 'Raleway';
+.card-title-style {
   justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  font-weight: bold;
-  color: whitesmoke;
-  letter-spacing: 1px;
-  flex-wrap: nowrap;
-  padding: 0;
-}
-.icon-class {
-  height: 30px;
-  width: 30px;
-}
-.index-9-c1-text,
-.index-9-c2-text,
-.index-9-c3-text {
-  padding-top: 0;
-  padding-bottom: 0;
   font-family: 'Raleway';
-  font-size: 10px;
-  font-weight: 500;
   letter-spacing: 1px;
-  color: whitesmoke;
+}
+.icon-image {
+  margin: 0 auto;
+  height: 40%;
+  width: 40%;
+}
+.card-text-style {
+  /* text-align: left; */
+  font-family: 'Raleway';
+  font-size: 17px;
+  line-height: 1.2rem;
 }
 @media (min-width: 700px) {
   .contact-us {
@@ -200,27 +267,11 @@ export default {
   .text-u-header {
     font-size: 20px;
   }
-  .index-9-c1-title1,
-  .index-9-c2-title2,
-  .index-9-c3-title3,
-  .index-9-c1-title4,
-  .index-9-c2-title5,
-  .index-9-c3-title6,
-  .index-9-c1-title7,
-  .index-9-c2-title8 {
-    font-size: 24px;
-  }
-  .icon-class {
-    height: 50px;
-    width: 50px;
-  }
-  .index-9-c1-text,
-  .index-9-c2-text,
-  .index-9-c3-text {
-    font-size: 19px;
-  }
   .index-9-card {
-    height: 230px;
+    justify-content: center;
+  }
+  .card-title-style {
+    font-size: 15px;
   }
 }
 @media (min-width: 1000px) {
@@ -228,67 +279,23 @@ export default {
     font-size: 75px;
     letter-spacing: 4px;
   }
-  .icon-class {
-    height: 60px;
-    width: 60px;
-  }
   .text-u-header {
     font-size: 25px;
   }
-  .index-9-card {
-    width: 350px;
-    height: 250px;
-  }
-  .index-9-c1-title1,
-  .index-9-c2-title2,
-  .index-9-c3-title3,
-  .index-9-c1-title4,
-  .index-9-c2-title5,
-  .index-9-c3-title6,
-  .index-9-c1-title7,
-  .index-9-c2-title8 {
-    margin-right: 0;
-    margin-left: 0;
+  .card-title-style {
+    font-size: 18px;
   }
 }
 @media (min-width: 1100px) {
   .index-9-cont {
     padding-bottom: 200px;
   }
-  .index-9-card {
-    height: 220px;
+  .card-title-style {
+    font-size: 20px;
   }
-  .index-9-c1-title1 {
-    margin-right: 135px;
-    margin-left: -50px;
-  }
-  .index-9-c2-title2 {
-    margin-right: 110px;
-    margin-left: -52px;
-  }
-  .index-9-c3-title3 {
-    margin-right: 100px;
-    margin-left: -55px;
-  }
-  .index-9-c1-title4 {
-    margin-right: 75px;
-    margin-left: -52px;
-  }
-  .index-9-c2-title5 {
-    margin-right: 80px;
-    margin-left: -50px;
-  }
-  .index-9-c3-title6 {
-    margin-right: 70px;
-    margin-left: -52px;
-  }
-  .index-9-c1-title7 {
-    margin-right: 130px;
-    margin-left: -50px;
-  }
-  .index-9-c2-title8 {
-    margin-right: 130px;
-    margin-left: -52px;
+  .icon-image {
+    height: 30%;
+    width: 30%;
   }
 }
 </style>

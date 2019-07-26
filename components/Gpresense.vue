@@ -27,13 +27,12 @@
           </v-card-title>
           <v-container
             class="index-7-cont2"
-            grid-list-xl
             justify-center
             align-center
             text-xs-center
           >
             <v-layout justify-space-around row wrap>
-              <v-flex xs8 sm4 md4 lg3 xl3>
+              <v-flex xs10 sm4 md3 lg3 xl3>
                 <v-card flat tile class="index-7-card">
                   <v-card-title
                     class="index-7-c-title primary--text text-uppercase"
@@ -52,7 +51,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm4 md4 lg3 xl3>
+              <v-flex xs10 sm4 md3 lg3 xl3>
                 <v-card flat tile class="index-7-card">
                   <v-card-title
                     class="index-7-c-title primary--text text-uppercase"
@@ -71,7 +70,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm4 md4 lg3 xl3>
+              <v-flex xs10 sm4 md3 lg3 xl3>
                 <v-card flat tile class="index-7-card">
                   <v-card-title
                     class="index-7-c-title primary--text text-uppercase"

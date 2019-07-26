@@ -31,8 +31,9 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer> -->
-    <v-toolbar prominent height="auto" flat app class="main-toolbar accent">
-      <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
+    <v-container fluid accent pa-0>
+      <v-toolbar height="auto" flat class="main-toolbar accent">
+        <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
@@ -42,78 +43,63 @@
       <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>remove</v-icon>
       </v-btn> -->
-      <v-toolbar-title class="main-title-toolbar">
-        <a href="/">
-          <v-img
-            src="https://files.slack.com/files-pri/T3UCG9LPL-FKPS739B2/logo-01.png"
-            contain
-          />
-        </a>
-      </v-toolbar-title>
-      <v-spacer />
-      <v-toolbar-items class="toolbar-items hidden-md-and-down">
-        <v-btn
-          v-for="item in items"
-          :key="item.icon"
-          class="btn-toolbar text-lowercase"
-          :href="item.route"
-          flat
-          depressed
-          >{{ item.title }}</v-btn
-        >
-        <!-- <v-container>
-          <a class="btn-toolbar" to="#" dark flat>home</a>
-          <a class="btn-toolbar" to="#" dark flat>what we do</a>
-          <a class="btn-toolbar" to="#" dark flat>services</a>
-          <a class="btn-toolbar" to="#" dark flat>about us</a>
-          <a class="btn-toolbar" to="#" dark flat>contact</a>
+        <v-toolbar-title class="main-title-toolbar">
+          <a href="/">
+            <v-img
+              src="https://files.slack.com/files-pri/T3UCG9LPL-FKPS739B2/logo-01.png"
+              contain
+            />
+          </a>
+        </v-toolbar-title>
+        <v-spacer />
+        <v-toolbar-items class="toolbar-items hidden-md-and-down">
           <v-btn
-            class="toolbar-nav"
-            icon
-            dark
-            large
-            @click.stop="rightDrawer = !rightDrawer"
-          >
-            <v-icon x-large>menu</v-icon>
-          </v-btn>
-        </v-container> -->
-      </v-toolbar-items>
-      <v-menu class="hidden-lg-and-up">
-        <v-toolbar-side-icon
-          slot="activator"
-          class="white--text text-lowercase"
-        ></v-toolbar-side-icon>
-        <v-list>
-          <v-list-tile
-            v-for="(item, i) in items"
-            :key="i"
+            v-for="item in items"
+            :key="item.icon"
+            class="btn-toolbar text-lowercase"
             :href="item.route"
-            router
-            exact
+            flat
+            depressed
+            >{{ item.title }}</v-btn
           >
-            <v-list-tile-action>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title v-text="item.title" />
-            </v-list-tile-content>
-          </v-list-tile>
-        </v-list>
-      </v-menu>
-    </v-toolbar>
-    <v-content>
-      <index />
-      <AboutUs id="aboutus" />
-      <OurServices id="ourservices" />
-      <OurExpertise id="ourexpertise" />
-      <WhatWeDo id="whatwedo" />
-      <WhyChooseUs id="whychooseus" />
-      <gpresense id="gpresense" />
-      <customerreview id="customerreview" />
-      <contactus id="contactus" />
-      <Footer />
-    </v-content>
-    <!-- <v-navigation-drawer
+        </v-toolbar-items>
+        <v-menu class="hidden-lg-and-up">
+          <v-toolbar-side-icon
+            slot="activator"
+            class="white--text text-lowercase"
+          ></v-toolbar-side-icon>
+          <v-list>
+            <v-list-tile
+              v-for="(item, i) in items"
+              :key="i"
+              :href="item.route"
+              router
+              exact
+            >
+              <v-list-tile-action>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title v-text="item.title" />
+              </v-list-tile-content>
+            </v-list-tile>
+          </v-list>
+        </v-menu>
+      </v-toolbar>
+      <!-- </v-container> -->
+      <v-content app>
+        <Main />
+        <AboutUs id="aboutus" />
+        <OurServices id="ourservices" />
+        <OurExpertise id="ourexpertise" />
+        <WhatWeDo id="whatwedo" />
+        <WhyChooseUs id="whychooseus" />
+        <gpresense id="gpresense" />
+        <customerreview id="customerreview" />
+        <contactus id="contactus" />
+        <Footer />
+      </v-content>
+      <!-- <v-navigation-drawer
       v-model="rightDrawer".index-7-cont {
     height: 500px;
   }
@@ -132,29 +118,12 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer> -->
-    <!-- <v-footer dark padless>
-      <v-card class="footer-card primary accent--text text-center" flat tile>
-        <v-card-text>
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-3 secondary white--text"
-            fab
-            icon
-          >
-            <v-icon large>{{ icon }}</v-icon>
-          </v-btn>
-        </v-card-text>
-        <v-card-text>
-          Designed and developed with love by mint fuse.
-        </v-card-text>
-      </v-card>
-    </v-footer> -->
+    </v-container>
   </v-app>
 </template>
 
 <script>
-import index from '~/components/index.vue'
+import Main from '~/components/main.vue'
 import AboutUs from '~/components/aboutus.vue'
 import OurServices from '~/components/ourservices.vue'
 import OurExpertise from '~/components/ourexpertise.vue'
@@ -166,7 +135,7 @@ import contactus from '~/components/contactus.vue'
 import Footer from '~/components/footer.vue'
 export default {
   components: {
-    index,
+    Main,
     AboutUs,
     OurServices,
     OurExpertise,
@@ -245,7 +214,7 @@ export default {
 @media (min-width: 700px) {
   .main-title-toolbar {
     height: 180px;
-    width: 360px;
+    width: 350px;
     padding: 25px 30px;
   }
 }

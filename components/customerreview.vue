@@ -31,7 +31,7 @@
                 <v-card flat tile>
                   <v-window v-model="onboarding" continuous>
                     <v-window-item v-for="n in length" :key="`card-${n}`">
-                      <v-card color="secondary" height="200">
+                      <v-card flat tile height="200">
                         <v-layout
                           align-center
                           justify-center
@@ -39,54 +39,9 @@
                           tag="v-card-text"
                           mb-3
                         >
-                          <h1 style="font-size: 5rem;" class="white--text">
+                          <h1 style="font-size: 5rem;" class="">
                             Slide {{ n }}
                           </h1>
-                        </v-layout>
-                        <!-- <v-flex mt-3>
-                          <v-rating
-                            background-color="secondary darken-1"
-                            color="yellow darken-1"
-                            dense
-                            half-increments
-                            empty-icon="$vuetify.icons.ratingFull"
-                            hover
-                            size="27"
-                          >
-                          </v-rating>
-                        </v-flex> -->
-                      </v-card>
-                    </v-window-item>
-                  </v-window>
-                  <v-window v-model="onboarding" continuous>
-                    <v-window-item
-                      v-for="item in customers"
-                      :key="`card-${item}`"
-                    >
-                      <v-card flat>
-                        <v-layout
-                          d-block
-                          align-center
-                          justify-center]
-                          fill-height
-                          tag="v-card-text"
-                          mt-5
-                          mb-0
-                        >
-                          <v-rating
-                            v-model="item.rating"
-                            background-color="secondary darken-1"
-                            color="yellow darken-1"
-                            dense
-                            half-increments
-                            empty-icon="$vuetify.icons.ratingFull"
-                            hover
-                            size="27"
-                          >
-                          </v-rating>
-                          <div>
-                            <span>{{ item.name }}</span>
-                          </div>
                         </v-layout>
                       </v-card>
                     </v-window-item>
@@ -95,6 +50,37 @@
                     <v-btn icon text @click="prev">
                       <v-icon x-large>mdi-chevron-left</v-icon>
                     </v-btn>
+                    <v-window v-model="onboarding" continuous>
+                      <v-window-item
+                        v-for="item in customers"
+                        :key="`card-${item}`"
+                      >
+                        <v-card flat>
+                          <v-layout
+                            d-inline
+                            align-center
+                            justify-center
+                            fill-height
+                            tag="v-card-text"
+                            mt-5
+                            mb-0
+                          >
+                            <v-rating
+                              v-model="item.rating"
+                              background-color="secondary darken-1"
+                              color="yellow darken-1"
+                              dense
+                              half-increments
+                              empty-icon="$vuetify.icons.ratingFull"
+                              hover
+                              size="27"
+                            >
+                            </v-rating>
+                            <p>{{ item.name }}</p>
+                          </v-layout>
+                        </v-card>
+                      </v-window-item>
+                    </v-window>
                     <v-btn icon text @click="next">
                       <v-icon x-large>mdi-chevron-right</v-icon>
                     </v-btn>
@@ -105,13 +91,12 @@
           </v-container>
           <v-container
             class="index-8-cont2"
-            grid-list-xl
             justify-center
             align-center
             text-xs-center
           >
             <v-layout justify-space-around row wrap>
-              <v-flex xs7 sm4 md3 lg3 xl3>
+              <v-flex xs4 sm4 md3 lg3 xl3>
                 <v-card flat tile class="index-8-card">
                   <v-card-title
                     class="index-8-c-title primary--text text-uppercase"
@@ -129,7 +114,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs7 sm4 md3 lg3 xl3>
+              <v-flex xs4 sm4 md3 lg3 xl3>
                 <v-card flat tile img="" class="index-8-card">
                   <v-card-title
                     class="index-8-c-title primary--text text-uppercase"
@@ -146,7 +131,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs7 sm4 md3 lg3 xl3>
+              <v-flex xs4 sm4 md3 lg3 xl3>
                 <v-card flat tile class="index-8-card">
                   <v-card-title
                     class="index-8-c-title primary--text text-uppercase"
@@ -218,8 +203,8 @@ export default {
 
 <style scoped>
 .index-8-cont {
-  padding: 0px;
-  height: 1173px;
+  height: 900px;
+  /* padding-bottom: 100px; */
 }
 .index-8-heading {
   background-color: rgba(255, 255, 255, 0);
@@ -270,13 +255,17 @@ export default {
   .index-8-uheader {
     font-size: 25px;
   }
+  .index-8-cont {
+    height: 1173px;
+    /* padding-bottom: 100px; */
+  }
   .arrow-class {
     height: 80px;
     width: 80px;
   }
-  .index-8-cont {
+  /* .index-8-cont {
     padding: 0;
-  }
+  } */
 }
 @media (min-width: 1000px) {
   .g-presense {
