@@ -120,8 +120,8 @@
 </template>
 <style scoped>
 .index-4 {
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
+  /* padding-top: 100px; */
+  padding-bottom: 100px;
   background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLUR99H4P/experties.png');
   background-size: contain;
   background-position: center;

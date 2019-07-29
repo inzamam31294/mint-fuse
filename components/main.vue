@@ -139,17 +139,16 @@ h3 {
 }
 .u-header {
   padding-top: 0px;
-  height: 15px;
+  height: 1px;
   overflow: hidden;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
 }
-.text-u-header,
+.text-u-header1,
 .text-u-header2 {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 8px;
   font-family: 'Raleway';
   display: inline-block;
-  overflow: hidden;
   white-space: nowrap;
 }
 .text-u-header1 {
@@ -161,9 +160,8 @@ h3 {
   width: 310px;
   /* height: 40px; */
   list-style: none;
-  padding-left: 5px;
+  padding-left: 2px;
   text-align: left;
-  overflow: hidden;
 }
 .text-u-header1 {
   animation: showup 10s ease;
@@ -216,7 +214,7 @@ h3 {
     width: 0px;
   }
   20% {
-    opacity: 1;
+    opacity: 0;
     width: 0px;
   }
   30% {
@@ -272,6 +270,11 @@ h3 {
     height: 25px;
     /* padding: 0 40px; */
   }
+  .text-u-header,
+  .text-u-header2 {
+    overflow: hidden;
+    display: inline-block;
+  }
   .text-u-header1,
   .text-u-header2 {
     font-size: 18px;
@@ -279,6 +282,7 @@ h3 {
   }
   .text-u-header2 {
     width: 305px;
+    padding-left: 5px;
   }
   .text-u-header1 {
     display: inline;

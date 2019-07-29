@@ -84,7 +84,7 @@
                               size="27"
                             >
                             </v-rating>
-                            <p>{{ items.name }}</p>
+                            <p class="customer-names">{{ items.name }}</p>
                           </v-layout>
                         </v-card>
                       </v-window-item>
@@ -264,6 +264,12 @@ export default {
 .arrow-class {
   height: 50px;
   width: 40px;
+}
+.customer-names {
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 @media (min-width: 700px) {
   .g-presense {

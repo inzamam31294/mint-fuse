@@ -157,7 +157,7 @@ export default {
           route: '/'
         },
         {
-          icon: 'apps',
+          icon: 'gavel',
           title: 'what we do',
           route: '#whatwedo'
         },
@@ -197,7 +197,7 @@ export default {
 .main-title-toolbar {
   height: 80px;
   width: 180px;
-  padding: 15px 15px;
+  padding: 10px 0;
 }
 .toolbar-items {
   padding: 0 30px;

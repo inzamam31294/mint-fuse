@@ -231,6 +231,8 @@ export default {
   background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLFHGTFTL/contact_us.png');
   background-size: contain;
   background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .index-9-cont {
   padding: 0;
