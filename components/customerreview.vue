@@ -1,8 +1,8 @@
 <template>
-  <v-layout wrap class="index-8">
-    <v-container class="index-8-cont primary" text-xs-center fluid>
+  <v-layout wrap class="index-8 primary">
+    <v-container class="index-8-cont" text-xs-center fluid>
       <v-flex xs12>
-        <v-card class="index-8-heading" flat>
+        <v-card class="index-8-heading" color="rgba(255, 255, 255, 0)" flat>
           <v-card-title class="index-8-headertext">
             <div
               data-aos-duration="2000"
@@ -28,10 +28,15 @@
           <v-container mb-5>
             <v-layout row wrap>
               <v-flex xs12>
-                <v-card flat tile>
+                <v-card color="rgba(255, 255, 255, 0)" flat tile>
                   <v-window v-model="onboarding" continuous>
                     <v-window-item v-for="n in length" :key="`card-${n}`">
-                      <v-card flat tile height="200">
+                      <v-card
+                        flat
+                        tile
+                        color="rgba(255, 255, 255, 0)"
+                        height="200"
+                      >
                         <v-layout
                           align-center
                           justify-center
@@ -52,21 +57,24 @@
                     </v-btn>
                     <v-window v-model="onboarding" continuous>
                       <v-window-item
-                        v-for="item in customers"
-                        :key="`card-${item}`"
+                        v-for="(items, i) in customers"
+                        :key="`card-${i}`"
                       >
-                        <v-card flat>
+                        <v-card
+                          color="rgba(255, 255, 255, 0)"
+                          height="100"
+                          flat
+                        >
                           <v-layout
                             d-inline
                             align-center
                             justify-center
-                            fill-height
                             tag="v-card-text"
                             mt-5
                             mb-0
                           >
                             <v-rating
-                              v-model="item.rating"
+                              v-model="items.rating"
                               background-color="secondary darken-1"
                               color="yellow darken-1"
                               dense
@@ -76,7 +84,7 @@
                               size="27"
                             >
                             </v-rating>
-                            <p>{{ item.name }}</p>
+                            <p>{{ items.name }}</p>
                           </v-layout>
                         </v-card>
                       </v-window-item>
@@ -94,14 +102,16 @@
             justify-center
             align-center
             text-xs-center
+            mb-5
           >
             <v-layout justify-space-around row wrap>
               <v-flex xs4 sm4 md3 lg3 xl3>
-                <v-card flat tile class="index-8-card">
-                  <v-card-title
-                    class="index-8-c-title primary--text text-uppercase"
-                  >
-                  </v-card-title>
+                <v-card
+                  flat
+                  tile
+                  color="rgba(255, 255, 255, 0)"
+                  class="index-8-card"
+                >
                   <v-card-text
                     class="index-8-c-text primary--text text-uppercase"
                   >
@@ -115,11 +125,12 @@
                 </v-card>
               </v-flex>
               <v-flex xs4 sm4 md3 lg3 xl3>
-                <v-card flat tile img="" class="index-8-card">
-                  <v-card-title
-                    class="index-8-c-title primary--text text-uppercase"
-                  >
-                  </v-card-title>
+                <v-card
+                  flat
+                  tile
+                  color="rgba(255, 255, 255, 0)"
+                  class="index-8-card"
+                >
                   <v-card-text
                     class="index-8-c-text primary--text text-uppercase"
                   >
@@ -132,11 +143,12 @@
                 </v-card>
               </v-flex>
               <v-flex xs4 sm4 md3 lg3 xl3>
-                <v-card flat tile class="index-8-card">
-                  <v-card-title
-                    class="index-8-c-title primary--text text-uppercase"
-                  >
-                  </v-card-title>
+                <v-card
+                  flat
+                  tile
+                  color="rgba(255, 255, 255, 0)"
+                  class="index-8-card"
+                >
                   <v-card-text
                     class="index-8-c-text primary--text text-uppercase"
                   >
@@ -202,8 +214,14 @@ export default {
 </script>
 
 <style scoped>
+.index-8 {
+  background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLT0KSW5T/customer_review.png');
+  background-size: contain;
+  background-position: center;
+}
 .index-8-cont {
-  height: 900px;
+  padding: 0;
+  /* height: 900px; */
   /* padding-bottom: 100px; */
 }
 .index-8-heading {
@@ -211,7 +229,7 @@ export default {
 }
 .g-presense {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
@@ -263,9 +281,6 @@ export default {
     height: 80px;
     width: 80px;
   }
-  /* .index-8-cont {
-    padding: 0;
-  } */
 }
 @media (min-width: 1000px) {
   .g-presense {

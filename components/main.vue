@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-layout app accent>
+    <v-layout class="main-index" app accent>
       <link
         rel="stylesheet"
         type="text/css"
@@ -16,51 +16,49 @@
         AOS.init()
       </script>
       <v-container fluid>
-        <v-layout>
-          <v-flex xl12>
-            <v-card class="main-heading accent" flat>
-              <v-card-title class="header-text">
-                <h1 class="p-class">
-                  <div class="text-1">
-                    your
-                  </div>
-                  <div class="text-2 primary--text">
-                    partner
-                  </div>
-                  <div class="text-3">
-                    for
-                  </div>
-                  <div class="text-4">
-                    all
-                  </div>
-                  <br />
-                  <div class="text-5">
-                    things
-                  </div>
-                  <div class="text-6 primary--text">
-                    digital
-                  </div>
-                </h1>
-              </v-card-title>
-              <v-card-text class="u-header white--text">
-                <div class="text-u-header">
-                  <p class="text-u-header1">we are an enthusiastic team of</p>
-                  <ul
-                    class="text-u-header2 secondary--text"
-                    style="font-weight: 800;"
-                  >
-                    <li class="flip-text1">software developers</li>
-                    <li class="flip-text2">web developers</li>
-                    <li class="flip-text3">programmers</li>
-                    <li class="flip-text4">content writers</li>
-                    <li class="flip-text5">social media marketing</li>
-                    <li class="flip-text6">creative people</li>
-                  </ul>
+        <v-flex xl12>
+          <v-card class="main-heading " color="rgba(255, 255, 255, 0)" flat>
+            <v-card-title class="header-text">
+              <h1 class="p-class">
+                <div class="text-1">
+                  your
                 </div>
-              </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
+                <div class="text-2 primary--text">
+                  partner
+                </div>
+                <div class="text-3">
+                  for
+                </div>
+                <div class="text-4">
+                  all
+                </div>
+                <br />
+                <div class="text-5">
+                  things
+                </div>
+                <div class="text-6 primary--text">
+                  digital
+                </div>
+              </h1>
+            </v-card-title>
+            <v-card-text class="u-header white--text">
+              <div class="text-u-header">
+                <p class="text-u-header1">we are an enthusiastic team of</p>
+                <ul
+                  class="text-u-header2 secondary--text"
+                  style="font-weight: 800;"
+                >
+                  <li class="flip-text1">software developers</li>
+                  <li class="flip-text2">web developers</li>
+                  <li class="flip-text3">programmers</li>
+                  <li class="flip-text4">content writers</li>
+                  <li class="flip-text5">social media marketing</li>
+                  <li class="flip-text6">creative people</li>
+                </ul>
+              </div>
+            </v-card-text>
+          </v-card>
+        </v-flex>
       </v-container>
     </v-layout>
   </v-app>
@@ -71,6 +69,11 @@ export default {}
 </script>
 
 <style scoped>
+.main-index {
+  background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLV4J32H4/landing_page.png');
+  background-size: contain;
+  background-position: center;
+}
 .p-class {
   font-size: 30px;
   text-align: left;
@@ -217,14 +220,14 @@ h3 {
     width: 0px;
   }
   30% {
-    width: 310px;
+    width: 305px;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    width: 310px;
+    width: 305px;
   }
 }
 @keyframes change {
@@ -262,8 +265,8 @@ h3 {
     letter-spacing: 3px;
     padding-bottom: 20px;
   }
-  .main-heading {
-    /* padding-top: 250px; */
+  .main-index {
+    padding-top: 300px;
   }
   .text-u-header {
     height: 25px;
@@ -275,7 +278,7 @@ h3 {
     letter-spacing: 2px;
   }
   .text-u-header2 {
-    width: 320px;
+    width: 305px;
   }
   .text-u-header1 {
     display: inline;

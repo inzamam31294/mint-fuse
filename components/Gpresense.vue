@@ -33,7 +33,15 @@
           >
             <v-layout justify-space-around row wrap>
               <v-flex xs10 sm4 md3 lg3 xl3>
-                <v-card flat tile class="index-7-card">
+                <v-card
+                  flat
+                  tile
+                  data-aos-delay="0"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease"
+                  data-aos="fade-up"
+                  class="index-7-card"
+                >
                   <v-card-title
                     class="index-7-c-title primary--text text-uppercase"
                   >
@@ -52,7 +60,15 @@
                 </v-card>
               </v-flex>
               <v-flex xs10 sm4 md3 lg3 xl3>
-                <v-card flat tile class="index-7-card">
+                <v-card
+                  flat
+                  tile
+                  data-aos-delay="250"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease"
+                  data-aos="fade-up"
+                  class="index-7-card"
+                >
                   <v-card-title
                     class="index-7-c-title primary--text text-uppercase"
                   >
@@ -71,7 +87,15 @@
                 </v-card>
               </v-flex>
               <v-flex xs10 sm4 md3 lg3 xl3>
-                <v-card flat tile class="index-7-card">
+                <v-card
+                  flat
+                  tile
+                  data-aos-delay="500"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease"
+                  data-aos="fade-up"
+                  class="index-7-card"
+                >
                   <v-card-title
                     class="index-7-c-title primary--text text-uppercase"
                   >
@@ -114,7 +138,7 @@ export default {}
 }
 .g-presense {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;

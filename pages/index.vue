@@ -32,7 +32,7 @@
       </v-list>
     </v-navigation-drawer> -->
     <v-container fluid accent pa-0>
-      <v-toolbar height="auto" flat class="main-toolbar accent">
+      <v-toolbar height="auto" flat fixed class="main-toolbar accent">
         <!-- <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
@@ -86,7 +86,6 @@
           </v-list>
         </v-menu>
       </v-toolbar>
-      <!-- </v-container> -->
       <v-content app>
         <Main />
         <AboutUs id="aboutus" />
@@ -163,7 +162,7 @@ export default {
           route: '#whatwedo'
         },
         {
-          icon: 'home',
+          icon: 'chat',
           title: 'services',
           route: '#ourservices'
         },
@@ -173,7 +172,7 @@ export default {
           route: '#aboutus'
         },
         {
-          icon: 'home',
+          icon: 'phone',
           title: 'contact',
           route: '#contactus'
         }

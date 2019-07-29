@@ -1,8 +1,8 @@
 <template>
-  <v-layout wrap class="index-6">
-    <v-container class="index-6-cont primary" text-xs-center fluid>
+  <v-layout wrap class="index-6 primary">
+    <v-container class="index-6-cont" text-xs-center fluid>
       <v-flex xs12>
-        <v-card class="index-6-heading" flat>
+        <v-card class="index-6-heading" color="rgba(255, 255, 255, 0)" flat>
           <v-card-title class="index-6-headertext">
             <div
               data-aos-duration="2000"
@@ -54,17 +54,24 @@
 </template>
 
 <style scoped>
-.index-6-cont {
-  padding: 0;
+.index-6 {
+  background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLT0KT7QD/why_choose_us.png');
+  background-size: contain;
+  background-position: center;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.index-6-cont {
+  padding: 0;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 .index-6-headertext {
   display: inline-flex;
 }
 .why-choose-us {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;

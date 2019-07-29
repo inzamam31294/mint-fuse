@@ -1,8 +1,8 @@
 <template>
-  <v-layout wrap class="index-3">
-    <v-container class="index-3-cont primary" text-xs-center fluid>
+  <v-layout wrap class="index-3 primary">
+    <v-container class="index-3-cont" text-xs-center fluid>
       <v-flex xs12>
-        <v-card class="index-3-heading" flat>
+        <v-card class="index-3-heading mt-5" flat>
           <v-card-title class="index-3-headertext">
             <div
               data-aos-duration="2000"
@@ -149,17 +149,21 @@
 </template>
 
 <style scoped>
-.index-3-cont {
-  padding: 0;
+.index-3 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.index-3-cont {
+  padding: 0;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 .index-3-headertext {
   display: inline-flex;
 }
 .our-services {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
@@ -247,8 +251,8 @@
     font-size: 19px;
   }
   .index-3-cont {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
   }
 }
 @media (min-width: 1000px) {

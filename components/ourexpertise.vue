@@ -1,8 +1,8 @@
 <template>
   <v-layout wrap class="index-4 primary">
-    <v-container class="index-4-cont primary" text-xs-center fluid>
+    <v-container class="index-4-cont" text-xs-center fluid>
       <v-flex xs12>
-        <v-card class="index-4-heading" flat>
+        <v-card class="index-4-heading" color="rgba(255, 255, 255, 0)" flat>
           <v-card-title class="index-4-headertext">
             <div
               data-aos-duration="2000"
@@ -27,17 +27,24 @@
           </v-card-title>
           <v-container class="index-4-cont2" grid-list-xl text-xs-center fluid>
             <v-layout ma-3 justify-space-around row wrap>
-              <v-flex xs10 sm10 md10 lg4 xl4>
+              <v-flex xs12 sm10 md10 lg4 xl4>
                 <v-card
                   flat
                   tile
+                  color="rgba(255, 255, 255, 0)"
                   data-aos-delay="0"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-up"
                 >
                   <v-card-title class="index-4-c1-title">
-                    web
+                    <div class="icon-class">
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FLUMW8UDV/final_details-31.png"
+                        contain
+                      />
+                    </div>
+                    &nbsp;web
                     <span style="color: #404a60;"> &nbsp;development</span>
                   </v-card-title>
                   <v-card-text class="index-4-c1-text">
@@ -49,16 +56,23 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs10 sm10 md10 lg4 xl4>
+              <v-flex xs12 sm10 md10 lg4 xl4>
                 <v-card
                   flat
                   tile
+                  color="rgba(255, 255, 255, 0)"
                   data-aos-delay="250"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-up"
                 >
                   <v-card-title class="index-4-c2-title">
+                    <div class="icon-class">
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FLV15132S/final_details-32.png"
+                        contain
+                      />
+                    </div>
                     mobile
                     <span style="color: #404a60;"> &nbsp;development</span>
                   </v-card-title>
@@ -71,17 +85,24 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs10 sm10 md10 lg4 xl4>
+              <v-flex xs12 sm10 md10 lg4 xl4>
                 <v-card
                   flat
                   tile
+                  color="rgba(255, 255, 255, 0)"
                   data-aos-delay="500"
                   data-aos-duration="2000"
                   data-aos-easing="ease"
                   data-aos="fade-up"
                 >
                   <v-card-title class="index-4-c3-title">
-                    machine
+                    <div class="icon-class">
+                      <v-img
+                        src="https://files.slack.com/files-pri/T3UCG9LPL-FLV15130E/final_details-33.png"
+                        contain
+                      />
+                    </div>
+                    &nbsp;machine
                     <span style="color: #404a60;"> &nbsp;learning</span>
                   </v-card-title>
                   <v-card-text class="index-4-c3-text">
@@ -98,9 +119,15 @@
   </v-layout>
 </template>
 <style scoped>
+.index-4 {
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLUR99H4P/experties.png');
+  background-size: contain;
+  background-position: center;
+}
 .index-4-cont {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 0;
 }
 /* .index-4-cont2 {
   padding-left: 0;
@@ -111,7 +138,7 @@
 }
 .our-expertise {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
@@ -126,7 +153,7 @@
 .index-4-c3-title {
   text-transform: uppercase;
   font-family: 'Raleway';
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   color: #66cc99;
   justify-content: center;
@@ -138,10 +165,14 @@
   text-align: center;
   padding-top: 0;
   font-family: 'Raleway';
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   line-height: 1.5rem;
   letter-spacing: 1px;
+}
+.icon-class {
+  height: 30px;
+  width: 30px;
 }
 @media (min-width: 700px) {
   .our-expertise {
@@ -164,9 +195,13 @@
     height: 80px;
     width: 80px;
   }
-  .index-4-cont {
-    /* padding-top: 00px; */
+  .index-4 {
+    padding-top: 200px;
     padding-bottom: 200px;
+  }
+  .icon-class {
+    height: 80px;
+    width: 80px;
   }
 }
 @media (min-width: 1000px) {

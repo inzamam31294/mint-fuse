@@ -1,7 +1,7 @@
 <template>
-  <v-layout wrap class="index-9">
+  <v-layout wrap class="index-9 accent">
     <v-container
-      class="index-9-cont accent"
+      class="index-9-cont"
       justify-center
       align-center
       text-xs-center
@@ -9,7 +9,7 @@
       fluid
     >
       <v-flex xs12>
-        <v-card class="index-9-heading accent" flat>
+        <v-card color="rgba(255, 255, 255, 0)" class="index-9-heading" flat>
           <v-card-title class="index-9-headertext">
             <div
               data-aos-duration="2000"
@@ -35,7 +35,7 @@
           <v-card-text class="text-u-header pt-0 primary--text">
             Drop us a line and We'll get back to you as soon as we can
           </v-card-text>
-          <v-form>
+          <v-form color="rgba(255, 255, 255, 0)">
             <v-container grid-list-xl>
               <v-layout row wrap>
                 <v-flex pb-0 pt-5 lg4>
@@ -95,7 +95,12 @@
           <v-container grid-list-xl text-xs-center justify-center pt-5>
             <v-layout justify-space-around row wrap>
               <v-flex xs12 sm4 lg3>
-                <v-card class="index-9-card accent" flat tile>
+                <v-card
+                  class="index-9-card"
+                  color="rgba(255, 255, 255, 0)"
+                  flat
+                  tile
+                >
                   <v-img
                     src="https://files.slack.com/files-pri/T3UCG9LPL-FLSS91WER/final_details-21.png"
                     contain
@@ -128,7 +133,12 @@
                 </v-card>
               </v-flex>
               <v-flex xs12 sm4 lg3>
-                <v-card class="index-9-card accent" flat tile>
+                <v-card
+                  class="index-9-card"
+                  color="rgba(255, 255, 255, 0)"
+                  flat
+                  tile
+                >
                   <v-img
                     src="https://files.slack.com/files-pri/T3UCG9LPL-FLLFS3ERF/final_details-22.png"
                     contain
@@ -146,7 +156,12 @@
                 </v-card>
               </v-flex>
               <v-flex xs12 sm4 lg3>
-                <v-card class="index-9-card accent" flat tile>
+                <v-card
+                  class="index-9-card"
+                  color="rgba(255, 255, 255, 0)"
+                  flat
+                  tile
+                >
                   <v-img
                     src="https://files.slack.com/files-pri/T3UCG9LPL-FLUMJGDPZ/final_details-23.png"
                     contain
@@ -162,7 +177,12 @@
                 </v-card>
               </v-flex>
               <v-flex xs12 sm4 lg3>
-                <v-card class="index-9-card accent" flat tile>
+                <v-card
+                  class="index-9-card"
+                  color="rgba(255, 255, 255, 0)"
+                  flat
+                  tile
+                >
                   <v-img
                     src="https://files.slack.com/files-pri/T3UCG9LPL-FLSRNB796/final_details-24.png"
                     contain
@@ -207,19 +227,24 @@ export default {
 </script>
 
 <style scoped>
+.index-9 {
+  background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLFHGTFTL/contact_us.png');
+  background-size: contain;
+  background-position: center;
+}
 .index-9-cont {
-  padding-top: 100px;
+  padding: 0;
   /* padding-bottom: 100px; */
 }
-.index-9-cont2 {
+/* .index-9-cont2 {
   padding: 0;
-}
+} */
 .index-9-headertext {
   display: inline-flex;
 }
 .contact-us {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
   font-weight: normal;
@@ -259,8 +284,7 @@ export default {
     height: 80px;
     width: 80px;
   }
-  .index-9-cont {
-    padding: 0;
+  .index-9 {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -287,9 +311,6 @@ export default {
   }
 }
 @media (min-width: 1100px) {
-  .index-9-cont {
-    padding-bottom: 200px;
-  }
   .card-title-style {
     font-size: 20px;
   }
