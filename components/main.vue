@@ -139,7 +139,7 @@ h3 {
 }
 .u-header {
   padding-top: 0px;
-  height: 1px;
+  height: 0.5px;
   overflow: hidden;
   letter-spacing: 0.3px;
 }
@@ -289,6 +289,7 @@ h3 {
   }
   .u-header {
     height: 300px;
+    padding-top: 0px;
     text-align: center;
     /* overflow: hidden; */
   }

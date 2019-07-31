@@ -17,7 +17,7 @@
               />
             </div>
             <h1
-              class="about-us accent--text"
+              class="about-us accent--text text-uppercase"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -70,7 +70,6 @@
   display: inline-flex;
 }
 .about-us {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';

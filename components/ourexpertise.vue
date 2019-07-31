@@ -5,6 +5,7 @@
         <v-card class="index-4-heading" color="rgba(255, 255, 255, 0)" flat>
           <v-card-title class="index-4-headertext">
             <div
+              data-aos-delay="300"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -16,8 +17,7 @@
               />
             </div>
             <h1
-              class="our-expertise accent--text"
-              data-aos-delay="500"
+              class="our-expertise accent--text text-uppercase"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -129,15 +129,10 @@
 .index-4-cont {
   padding: 0;
 }
-/* .index-4-cont2 {
-  padding-left: 0;
-  padding-right: 0;
-} */
 .index-4-headertext {
   display: inline-flex;
 }
 .our-expertise {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';

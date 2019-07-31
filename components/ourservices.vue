@@ -5,6 +5,7 @@
         <v-card class="index-3-heading mt-5" flat>
           <v-card-title class="index-3-headertext">
             <div
+              data-aos-delay="300"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -16,8 +17,7 @@
               />
             </div>
             <h1
-              class="our-services accent--text"
-              data-aos-delay="500"
+              class="our-services accent--text text-uppercase"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -34,7 +34,9 @@
                     flat
                     class="our-service-cards secondary"
                   >
-                    <v-card-title class="index-3-c1-title accent--text">
+                    <v-card-title
+                      class="index-3-c1-title accent--text text-uppercase"
+                    >
                       web & app<br />
                       development
                     </v-card-title>
@@ -72,7 +74,9 @@
                     flat
                     class="our-service-cards accent"
                   >
-                    <v-card-title class="index-3-c2-title primary--text">
+                    <v-card-title
+                      class="index-3-c2-title primary--text text-uppercase"
+                    >
                       digital<br />
                       media
                     </v-card-title>
@@ -110,7 +114,9 @@
                     flat
                     class="our-service-cards tertiary"
                   >
-                    <v-card-title class="index-3-c3-title accent--text">
+                    <v-card-title
+                      class="index-3-c3-title accent--text text-uppercase"
+                    >
                       graphic<br />
                       design
                     </v-card-title>
@@ -162,7 +168,6 @@
   display: inline-flex;
 }
 .our-services {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
@@ -183,7 +188,6 @@
 .index-3-c3-title {
   font-size: 30px;
   font-family: 'Raleway';
-  text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   justify-content: center;

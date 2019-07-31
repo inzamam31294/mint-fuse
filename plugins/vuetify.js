@@ -7,6 +7,7 @@ import '@mdi/font/css/materialdesignicons.min.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import Animation from 'animate.css'
 import VueAnimate from 'vue-animate-scroll'
+// import { store } from '~/store'
 
 Vue.use(Vuetify, {
   iconfont: 'md' || 'mdi' || 'fa' || 'fa4',
@@ -20,6 +21,12 @@ Vue.use(Vuetify, {
 
 Vue.use(Animation)
 Vue.use(VueAnimate)
+
+// eslint-disable-next-line no-new
+new Vue({
+  // el: '#app',
+  created() {}
+})
 
 // Vue.use(Vuetify, {
 //   theme: {

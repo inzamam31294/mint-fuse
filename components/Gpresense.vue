@@ -5,6 +5,7 @@
         <v-card class="index-7-heading" flat>
           <v-card-title class="index-7-headertext">
             <div
+              data-aos-delay="300"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -16,8 +17,7 @@
               />
             </div>
             <h1
-              class="g-presense primary--text"
-              data-aos-delay="500"
+              class="g-presense primary--text text-uppercase"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -137,7 +137,6 @@ export default {}
   background-color: rgba(255, 255, 255, 0);
 }
 .g-presense {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';

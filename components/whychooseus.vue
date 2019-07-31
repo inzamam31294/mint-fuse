@@ -5,6 +5,7 @@
         <v-card class="index-6-heading" color="rgba(255, 255, 255, 0)" flat>
           <v-card-title class="index-6-headertext">
             <div
+              data-aos-delay="300"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -16,8 +17,7 @@
               />
             </div>
             <h1
-              class="why-choose-us accent--text"
-              data-aos-delay="500"
+              class="why-choose-us accent--text text-uppercase"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -63,14 +63,11 @@
 }
 .index-6-cont {
   padding: 0;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
 }
 .index-6-headertext {
   display: inline-flex;
 }
 .why-choose-us {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';

@@ -15,6 +15,7 @@
             class="index-5-headertext"
           >
             <div
+              data-aos-delay="300"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -26,25 +27,24 @@
               />
             </div>
             <h1
-              data-aos-delay="500"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
-              class="what-we-do primary--text"
+              class="what-we-do primary--text text-uppercase"
             >
               what we<span style="font-weight: bold;"> do</span>
             </h1>
           </v-card-title>
           <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
             <v-layout justify-space-around row wrap>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-right"
                 >
@@ -58,7 +58,7 @@
                     &nbsp;web
                     <span style="color: #66cc99;"> &nbsp;design</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c1-text">
+                  <v-card-text class="index-5-c1-text white--text">
                     <div>
                       <p>
                         Our fresh design concepts<br />
@@ -71,14 +71,14 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-up"
                 >
@@ -92,7 +92,7 @@
                     &nbsp;graphic
                     <span style="color: #66cc99;"> &nbsp;design</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c2-text">
+                  <v-card-text class="index-5-c2-text white--text">
                     From business cards to<br />
                     print media, UI/UX to social<br />
                     media posts, logo design to<br />
@@ -101,14 +101,14 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-left"
                 >
@@ -122,7 +122,7 @@
                     &nbsp;web
                     <span style="color: #66cc99;"> &nbsp;maintaince</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c3-text">
+                  <v-card-text class="index-5-c3-text white--text">
                     We bring simple, direct &<br />
                     cost effective approach to<br />
                     help maintain your existing<br />
@@ -135,14 +135,14 @@
           </v-container>
           <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
             <v-layout justify-space-around row wrap>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-right"
                 >
@@ -156,7 +156,7 @@
                     &nbsp;web
                     <span style="color: #66cc99;"> &nbsp;development</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c1-text">
+                  <v-card-text class="index-5-c1-text white--text">
                     Get a purely functional &<br />
                     scalable website. You want<br />
                     to choose a platform or<br />
@@ -165,14 +165,14 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-up"
                 >
@@ -186,7 +186,7 @@
                     &nbsp;app
                     <span style="color: #66cc99;"> &nbsp;development</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c2-text">
+                  <v-card-text class="index-5-c2-text white--text">
                     For businesses of all sizes &<br />
                     industries, we can custom<br />
                     design an application to fit<br />
@@ -194,14 +194,14 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-left"
                 >
@@ -215,7 +215,7 @@
                     &nbsp;digital
                     <span style="color: #66cc99;"> &nbsp;marketing</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c3-text">
+                  <v-card-text class="index-5-c3-text white--text">
                     We empower your brand<br />
                     digitaly get business leads,<br />
                     & get more conversions<br />
@@ -227,14 +227,14 @@
           </v-container>
           <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
             <v-layout justify-space-around row wrap>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-right"
                 >
@@ -248,7 +248,7 @@
                     &nbsp;e-
                     <span style="color: #66cc99;"> &nbsp;commerce</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c1-text">
+                  <v-card-text class="index-5-c1-text white--text">
                     Let us create feature-rich<br />
                     E-commerce store to help<br />
                     you set up an online<br />
@@ -256,14 +256,14 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
                   tile
                   color="rgba(255, 255, 255, 0)"
                   data-aos-delay="100"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   data-aos-easing="ease"
                   data-aos="zoom-in-up"
                 >
@@ -277,7 +277,7 @@
                     &nbsp;social
                     <span style="color: #66cc99;"> &nbsp;media</span>
                   </v-card-title>
-                  <v-card-text class="index-5-c2-text">
+                  <v-card-text class="index-5-c2-text white--text">
                     We use the power of social<br />
                     media to reach a greater<br />
                     audience at the right time<br />
@@ -285,7 +285,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   color="rgba(255, 255, 255, 0)"
@@ -317,7 +317,6 @@
   display: inline-flex;
 }
 .what-we-do {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
@@ -395,7 +394,6 @@
   font-family: 'Raleway';
   font-size: 10px;
   font-weight: 500;
-  color: whitesmoke;
 }
 @media (min-width: 700px) {
   .what-we-do {
@@ -464,15 +462,15 @@
     height: 220px;
   }
   .index-5-c1-title1 {
-    margin-right: 135px;
+    margin-right: 170px;
     margin-left: -50px;
   }
   .index-5-c2-title2 {
-    margin-right: 110px;
+    margin-right: 120px;
     margin-left: -52px;
   }
   .index-5-c3-title3 {
-    margin-right: 100px;
+    margin-right: 115px;
     margin-left: -55px;
   }
   .index-5-c1-title4 {
@@ -480,20 +478,20 @@
     margin-left: -52px;
   }
   .index-5-c2-title5 {
-    margin-right: 80px;
+    margin-right: 90px;
     margin-left: -50px;
   }
   .index-5-c3-title6 {
-    margin-right: 70px;
+    margin-right: 80px;
     margin-left: -52px;
   }
   .index-5-c1-title7 {
-    margin-right: 130px;
-    margin-left: -50px;
+    margin-right: 150px;
+    margin-left: -58px;
   }
   .index-5-c2-title8 {
-    margin-right: 130px;
-    margin-left: -52px;
+    margin-right: 150px;
+    margin-left: -57px;
   }
 }
 </style>

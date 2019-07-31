@@ -56,7 +56,7 @@
           <v-btn
             v-for="item in items"
             :key="item.icon"
-            class="btn-toolbar text-lowercase"
+            class="btn-toolbar white--text text-lowercase"
             :href="item.route"
             flat
             depressed
@@ -172,7 +172,7 @@ export default {
           route: '#aboutus'
         },
         {
-          icon: 'phone',
+          icon: 'mail',
           title: 'contact',
           route: '#contactus'
         }
@@ -206,8 +206,6 @@ export default {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  text-decoration: none;
-  color: whitesmoke;
   padding: 0 20px;
 }
 @media (min-width: 700px) {

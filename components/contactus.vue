@@ -12,6 +12,7 @@
         <v-card color="rgba(255, 255, 255, 0)" class="index-9-heading" flat>
           <v-card-title class="index-9-headertext">
             <div
+              data-aos-delay="300"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
@@ -23,11 +24,10 @@
               />
             </div>
             <h1
-              data-aos-delay="500"
               data-aos-duration="2000"
               data-aos-easing="ease"
               data-aos="fade-right"
-              class="contact-us primary--text"
+              class="contact-us primary--text text-uppercase"
             >
               contact<span style="font-weight: bold;"> us</span>
             </h1>
@@ -35,56 +35,85 @@
           <v-card-text class="text-u-header pt-0 primary--text">
             Drop us a line and We'll get back to you as soon as we can
           </v-card-text>
-          <v-form color="rgba(255, 255, 255, 0)">
+          <v-form
+            ref="form"
+            v-model="valid"
+            lazy-validation
+            color="rgba(255, 255, 255, 0)"
+            @submit.prevent="submit"
+          >
             <v-container grid-list-xl>
               <v-layout row wrap>
                 <v-flex pb-0 pt-5 lg4>
                   <v-text-field
+                    id="name"
                     v-model="name"
-                    :rules="[rules.required, rules.name]"
+                    :rules="nameRules"
                     name
                     maxlength="20"
                     class="accent--text"
                     label="Your Name"
+                    type="text"
                     solo
+                    flat
+                    required
                   >
                   </v-text-field>
                 </v-flex>
                 <v-flex pb-0 pt-5 lg4>
                   <v-text-field
+                    id="email"
                     v-model="email"
-                    :rules="[rules.required, rules.email]"
+                    :rules="emailRules"
                     class="accent--text"
                     label="Your Email"
+                    type="text"
                     solo
+                    flat
+                    required
                   >
                   </v-text-field>
                 </v-flex>
                 <v-flex pb-0 pt-5 lg4>
                   <v-text-field
+                    id="subject"
                     v-model="subject"
-                    :rules="[rules.required, rules.subject]"
+                    :rules="subjectRules"
                     subject
                     maxlength="20"
                     class="accent--text"
                     label="Your Subject"
+                    type="text"
                     solo
+                    flat
+                    required
                   >
                   </v-text-field>
                 </v-flex>
                 <v-flex pb-0 xs12>
                   <v-textarea
+                    id="message"
+                    v-model="message"
                     solo
                     class="accent--text"
-                    name="input-7-4"
                     rows="10"
+                    type="text"
                     label="Enter Your Message"
                     auto-grow
+                    flat
                   ></v-textarea>
                 </v-flex>
                 <v-flex pt-0 xs12>
                   <div>
-                    <v-btn depressed color="secondary" dark large block>
+                    <v-btn
+                      depressed
+                      color="secondary"
+                      type="submit"
+                      dark
+                      large
+                      block
+                      @click="submit"
+                    >
                       <v-icon size="40px">mdi-email-outline</v-icon>
                     </v-btn>
                   </div>
@@ -205,21 +234,58 @@
     </v-container>
   </v-layout>
 </template>
+
 <script>
+import db from './FirebaseConfigs'
 export default {
+  components: {},
   data() {
     return {
+      valid: true,
       name: '',
       email: '',
       subject: '',
-      rules: {
-        required: value => !!value || 'Required.',
-        name: value => value.length >= 4 || 'Min 4 characters',
-        subject: value => value.length >= 4 || 'Min 4 characters',
-        email: value => {
+      message: '',
+      nameRules: [
+        value => !!value || 'Name Is Required',
+        value => (value && value.length > 3) || 'Min 4 characters',
+        value => (value && value.length <= 20) || 'Max 20 characters'
+      ],
+      subjectRules: [
+        value => !!value || 'Subject Is Required',
+        value => (value && value.length > 3) || 'Min 4 characters',
+        value => (value && value.length <= 20) || 'Max 20 characters'
+      ],
+      emailRules: [
+        value => !!value || 'Email Is Required',
+        value => {
           const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
           return pattern.test(value) || 'Invalid e-mail.'
         }
+      ]
+    }
+  },
+  methods: {
+    submit() {
+      // eslint-disable-next-line no-console
+      // console.log('dattttabase', database)
+      if (this.$refs.form.validate()) {
+        // this.snackbar = true
+        const formData = {
+          name: this.name,
+          email: this.email,
+          subject: this.subject,
+          message: this.message
+        }
+        db.collection('contactForm')
+          .add(formData)
+          .then(() => {
+            // eslint-disable-next-line no-console
+            console.log(formData)
+            alert('Your Email Has Been Sent!')
+          })
+        // // eslint-disable-next-line no-console
+        // console.log('Data Added')
       }
     }
   }
@@ -236,16 +302,11 @@ export default {
 }
 .index-9-cont {
   padding: 0;
-  /* padding-bottom: 100px; */
 }
-/* .index-9-cont2 {
-  padding: 0;
-} */
 .index-9-headertext {
   display: inline-flex;
 }
 .contact-us {
-  text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: 'Raleway';
