@@ -49,17 +49,13 @@
                         class="d-flex transition-fast-in-fast-out accent v-card--reveal white--text"
                       >
                         <div class="hover-text">
-                          <span class="upper-text" style=""
-                            >web & app development</span
-                          >
+                          <span class="upper-text">web & app development</span>
                           <div class="under-text">
-                            Software Solutions For Needs<br /><br />
-                            Do away with the hassle of<br />
-                            repeated changes and start making profits faster!<br />
-                            We are a legit team of developers proficient at
-                            WordPress,<br />
-                            Magento, Shopify, WooCommerce and Mobile App<br />
-                            Development Services.
+                            Our full-stack developers<br />
+                            & agile experts combine the tech,<br />
+                            the talent & the processes<br />
+                            to build your web & mobile<br />
+                            applications.
                           </div>
                         </div>
                       </div>
@@ -89,17 +85,12 @@
                         class="d-flex transition-fast-in-fast-out tertiary v-card--reveal accent--text"
                       >
                         <div class="hover-text">
-                          <span class="upper-text"> digital media</span>
-                          <div class="under-text" style="">
-                            Digital Reputation Management<br /><br />
-                            Our digital & social media team<br />
-                            creates impactful experiences for your audience<br />
-                            through audience intelligence and sophisticated
-                            targeting. By<br />
-                            understanding when, where, and how the audience
-                            wants<br />
-                            to be communicated with, we develop campaigns<br />
-                            that reach right people at the right time.
+                          <span class="upper-text">digital media</span>
+                          <div class="under-text">
+                            We create impactful<br />
+                            experiences for our audience<br />
+                            through audience intelligence<br />
+                            & sophisticated targeting.
                           </div>
                         </div>
                       </div>
@@ -129,16 +120,12 @@
                         class="d-flex transition-fast-in-fast-out secondary v-card--reveal white--text"
                       >
                         <div class="hover-text">
-                          <span class="upper-text"> graphic design</span>
-                          <div class="under-text" style="">
-                            Creative Material For Successful Branding And
-                            Messaging<br /><br />
-                            We convert pixel-perfect designs into<br />
-                            retina-ready codes for your clients within the<br />
-                            decided timelines. Be it a social media design or a
-                            website <br />landing page, our team is ready to
-                            meet<br />
-                            your commitments for you.
+                          <span class="upper-text">graphic design</span>
+                          <div class="under-text">
+                            We convert pixel-perfect<br />
+                            designs into retina-ready codes<br />
+                            for our clients within the<br />
+                            decided timelines.
                           </div>
                         </div>
                       </div>
@@ -204,9 +191,8 @@
 }
 .hover-text {
   line-height: 2rem;
-  margin-top: 100px;
+  margin: auto 0;
 }
-
 .upper-text {
   text-transform: uppercase;
   font-weight: bold;
@@ -216,6 +202,7 @@
   font-size: 13px;
   font-weight: normal;
   line-height: 1.5rem;
+  padding-top: 20px;
 }
 .v-card--reveal {
   justify-content: center;

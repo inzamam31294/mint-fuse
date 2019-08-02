@@ -267,25 +267,22 @@ export default {
   },
   methods: {
     submit() {
-      // eslint-disable-next-line no-console
-      // console.log('dattttabase', database)
       if (this.$refs.form.validate()) {
-        // this.snackbar = true
+        this.snackbar = true
+        const timestamp = new Date()
         const formData = {
           name: this.name,
           email: this.email,
           subject: this.subject,
-          message: this.message
+          message: this.message,
+          timestamp
         }
         db.collection('contactForm')
           .add(formData)
           .then(() => {
-            // eslint-disable-next-line no-console
-            console.log(formData)
             alert('Your Email Has Been Sent!')
           })
-        // // eslint-disable-next-line no-console
-        // console.log('Data Added')
+        this.$refs.form.reset()
       }
     }
   }

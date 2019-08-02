@@ -1,5 +1,6 @@
 // const colors = require('vuetify/es5/util/colors').default
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   mode: 'universal',
@@ -20,7 +21,7 @@ module.exports = {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon1.ico' },
       {
         rel: 'stylesheet',
         href:
@@ -75,7 +76,16 @@ module.exports = {
    */
   build: {
     transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],
+    plugins: [
+      new VuetifyLoaderPlugin(),
+      new Dotenv({
+        path: './.env', // load this now instead of the ones in '.env'
+        safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
+        systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
+        silent: true, // hide any errors
+        defaults: false
+      })
+    ],
     loaders: {
       stylus: {
         import: ['~assets/style/variables.styl']

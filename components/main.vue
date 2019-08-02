@@ -158,7 +158,6 @@ h3 {
 .text-u-header2 {
   margin-top: 0;
   width: 310px;
-  /* height: 40px; */
   list-style: none;
   padding-left: 2px;
   text-align: left;

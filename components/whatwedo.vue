@@ -37,7 +37,7 @@
           </v-card-title>
           <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
             <v-layout justify-space-around row wrap>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -71,7 +71,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -101,7 +101,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -135,7 +135,7 @@
           </v-container>
           <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
             <v-layout justify-space-around row wrap>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -165,7 +165,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -194,7 +194,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -227,7 +227,7 @@
           </v-container>
           <v-container class="index-5-cont2" text-xs-center text-lg-left fluid>
             <v-layout justify-space-around row wrap>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -256,7 +256,7 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   flat
@@ -285,12 +285,12 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs8 sm7 md6 lg2 xl2>
+              <v-flex d-flex xs8 sm7 md6 lg2 xl2>
                 <v-card
                   class="index-5-card"
                   color="rgba(255, 255, 255, 0)"
                   flat
-                  height="50px"
+                  height="0px"
                 >
                 </v-card
               ></v-flex>
@@ -307,11 +307,10 @@
   background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLSFQFREY/what_we_do.png');
   background-size: contain;
   background-position: center;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
 }
 .index-5-cont {
   padding: 0;
+  padding-top: 100px;
 }
 .index-5-headertext {
   display: inline-flex;
@@ -328,8 +327,7 @@
   width: 30px;
 }
 .index-5-card {
-  height: 200px;
-  /* width: 200px; */
+  height: 150px;
 }
 .index-5-c1-title1,
 .index-5-c2-title2,

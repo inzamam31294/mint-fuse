@@ -32,19 +32,14 @@
             data-aos="fade-up"
             class="index-2-uheader"
             >Our work is bound to be as creative and fresh to the eye as is mint
-            to a mojito<br />
-            glass. We create smart code, beautiful designs, and fusion of what
-            adds<br />
-            a minty touch to your needs. We cultivate an engaging culture in our
-            daily tech<br />
-            routine to leave you with an unparalleled experience.<br />Our work
-            is bound to be as creative and fresh to the eye as is mint to a
-            mojito<br />
-            glass. We create smart code, beautiful designs, and fusion of what
-            adds a<br />
-            minty touch to your needs. We cultivate an engaging culture in our
-            daily tech<br />
-            routine to leave you with an unparalleled experience.
+            to a mojito glass. We create smart code, beautiful designs, and
+            fusion of what adds a minty touch to your needs. We cultivate an
+            engaging culture in our daily tech routine to leave you with an
+            unparalleled experience.Our work is bound to be as creative and
+            fresh to the eye as is mint to a mojito glass. We create smart code,
+            beautiful designs, and fusion of what adds a minty touch to your
+            needs. We cultivate an engaging culture in our daily tech routine to
+            leave you with an unparalleled experience.
           </v-card-text>
         </v-card>
       </v-flex>
@@ -55,7 +50,7 @@
 <style scoped>
 .index-2 {
   padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   background-image: url('https://files.slack.com/files-pri/T3UCG9LPL-FLUR99ABH/about_us.png');
   background-size: contain;
   background-position: center;
@@ -77,7 +72,7 @@
 }
 .arrow-class {
   height: 50px;
-  width: 50px;
+  width: 40px;
 }
 .index-2-uheader {
   text-align: center;
@@ -91,7 +86,10 @@
     letter-spacing: 4px;
   }
   .index-2-uheader {
-    font-size: 20px;
+    font-size: 25px;
+    width: 690px;
+    margin: auto;
+    line-break: normal;
   }
   .arrow-class {
     height: 80px;
@@ -108,7 +106,7 @@
     letter-spacing: 4px;
   }
   .index-2-uheader {
-    font-size: 25px;
+    width: 890px;
   }
 }
 </style>

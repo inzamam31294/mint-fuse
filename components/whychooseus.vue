@@ -32,19 +32,13 @@
             data-aos="fade-up"
             class="index-6-uheader"
             >We understand the client, assess their needs and gather team set to
-            reach<br />
-            target goals. Your goals can be as varied as building software for a
-            retail<br />
-            store to designing a logo for your new brand. We reach these goals
-            with our<br />
-            team of expert programmers, coders, UI/UX designers, web
-            developers,<br />
-            application developers, digital media strategists, social media
-            marketers,<br />
-            and SEO & SEM fanatics that employ their best skills and expertise
-            to deliver a<br />
-            successful project. We provide unparalleled support to our clients
-            who grow<br />
+            reach target goals. Your goals can be as varied as building software
+            for a retail store to designing a logo for your new brand. We reach
+            these goals with our team of expert programmers, coders, UI/UX
+            designers, web developers, application developers, digital media
+            strategists, social media marketers, and SEO & SEM fanatics that
+            employ their best skills and expertise to deliver a successful
+            project. We provide unparalleled support to our clients who grow
             their business and get to enjoy the praise.
           </v-card-text>
         </v-card>
@@ -89,6 +83,9 @@
   }
   .index-6-uheader {
     font-size: 25px;
+    width: 690px;
+    margin: auto;
+    line-break: normal;
   }
   .arrow-class {
     height: 80px;
@@ -104,6 +101,9 @@
   .why-choose-us {
     font-size: 75px;
     letter-spacing: 4px;
+  }
+  .index-6-uheader {
+    width: 890px;
   }
 }
 </style>
