@@ -27,7 +27,7 @@
     "firebase": "^6.3.3",
     "fs": "0.0.1-security",
     "hooper": "^0.2.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "typeface-poppins": "0.0.72",
     "vue-animate-scroll": "^0.1.5",
     "vuetify": "^1.5.5",
